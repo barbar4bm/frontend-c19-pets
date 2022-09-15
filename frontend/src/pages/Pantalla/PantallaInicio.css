@@ -3,16 +3,21 @@
 }
 
 h2 {
+    top:500px;
+    position: relative;
     font-size:25px;
     opacity: auto;
     width: max-content;
     color:aqua;
+    left:40px;  
   }
   
 h1 {
+    top:500px;
+    position: relative;
     font-size:30px;
-    opacity: auto;
+    opacity:1;
     width: max-content;
-    color: blueviolet;
-
+    color: darkmagenta;
+    left:40px;
 }
