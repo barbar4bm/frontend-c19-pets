@@ -13,7 +13,7 @@ export const PantallaInicio = () => {
  
   return (
     <> 
-     
+        
       
         <button className='btn btn-secundary' style={{float:'right' , margin:'1px'}}>
           Acerca de
@@ -29,6 +29,8 @@ export const PantallaInicio = () => {
 
         <h2 className='PantallaInicio'>CLINICA VETERINARIA </h2>  
         <h1 className='PantallaInicio'>PUERTAS DEL MAR </h1> 
+
+       
     </>
     
   )

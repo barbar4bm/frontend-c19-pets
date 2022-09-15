@@ -3,7 +3,7 @@
 }
 
 h2 {
-    top:500px;
+    top:600px;
     position: relative;
     font-size:25px;
     opacity: auto;
@@ -13,11 +13,18 @@ h2 {
   }
   
 h1 {
-    top:500px;
+    top:600px;
     position: relative;
     font-size:30px;
     opacity:1;
     width: max-content;
     color: darkmagenta;
     left:40px;
+}
+image {
+    
+    max-width: max-content;
+    max-height: max-content;
+    background-image: '../assets/imagen.jpg';
+
 }
