@@ -1,0 +1,18 @@
+.background{
+    background-color: aqua;
+}
+
+h2 {
+    font-size:25px;
+    opacity: auto;
+    width: max-content;
+    color:aqua;
+  }
+  
+h1 {
+    font-size:30px;
+    opacity: auto;
+    width: max-content;
+    color: blueviolet;
+
+}

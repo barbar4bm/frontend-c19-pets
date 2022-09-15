@@ -1,10 +1,16 @@
+import { PantallaInicio } from "./pages/Pantalla/PantallaInicio";
 
 function App() {
   return (
-    <div className="App">
-      A
-    </div>
-  );
+    <>
+      <div>
+        <PantallaInicio/>
+      </div>
+    
+    </>
+    
+  ); 
+  
 }
 
 export default App;
