@@ -1,37 +1,37 @@
 import React from 'react'
-import'./PantallaInicio.css';
-
-
-//no estoy seguro de que hace este codigo pero me permitio cambiar el tamaño de la fuente h1
-//obtenido del css 
-
-const fuente = document.createElement('fuente'); 
-fuente.style='./PantallaInicio.css';
+import './PantallaInicio.css';
+import background from "../../components/logo.jpg";
 
 
 export const PantallaInicio = () => {
- 
+
   return (
-    <> 
-        
-      
-        <button className='btn btn-secundary' style={{float:'right' , margin:'1px'}}>
-          Acerca de
-        </button>
+   
+  <div className='row mt-0'>
+    <div className='container'>
+        <div className='fondo'>
 
-        <button className='btn btn-secundary'style={{float:'right' , margin:'1px'}} >
-          Agendar
-        </button>
+          <button className='btn btn-secundary'style={{float:'right' }}>
+                Acerca de
+          </button>
 
-        <button className='btn btn-secundary' style={{float:'right' , margin:'1px'}}>
-          Inicio Sesion 
-        </button>
+          <button className='btn btn-secundary'style={{float:'right' }} >
+              Agendar
+          </button>
 
-        <h2 className='PantallaInicio'>CLINICA VETERINARIA </h2>  
-        <h1 className='PantallaInicio'>PUERTAS DEL MAR </h1> 
+          <button className='btn btn-secundary' style={{float:'right' }}>
+              Inicio Sesion 
+          </button>
+          
+          <img src={`${background}`} 
+              alt="">
+          </img>
 
-       
-    </>
-    
+          <h2> CLINICA VETERINARIA</h2>
+          <h1>PUERTAS DEL MAR</h1>
+          
+        </div>
+      </div>
+    </div> 
   )
 }
