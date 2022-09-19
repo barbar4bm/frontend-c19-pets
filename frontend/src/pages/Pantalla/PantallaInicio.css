@@ -1,36 +1,82 @@
+.container{
+    height: 1080px;
+    width: 100%;
+    max-width: 1340px ;
+    max-height: 1080px;
+    margin: 0;
+
+}
+body{
+    background-color: whitesmoke;
+}
+img {
+    width:1277px ;
+    height:1000px;
+    min-width:auto ;
+    min-height: auto ;
+    border: 0%;
+    
+}
+
+.container img {
+    width: 100%;
+    height: 1080px;
+}
+
+.img2 {
+    width:73px ;
+    height:60px;
+    min-width:auto ;
+    min-height: auto ;
+    position: relative;
+    background-image: url(../../components/icono.jpg);
+    bottom: 560px;
+    left: 40px;
+}
+
+
 
 h1 {
-    position: relative;
     color: darkmagenta;
     left:40px;
+
+    
 }
 
 h2 {
-    position: relative;
     color:aqua;
     left:40px;  
   }
 
-.fondo img{
-    width: 108%;
-    max-height: fit-content;
-    
-}
+
 
 button {
     position: relative;
-    top:100px;
-    right: 20px;
+    top:60px;
+    right: 40px;
+    border: 0px;
+    margin: 0px;
+}
+
+
+
+.fondo{
+    margin: 0px;
+    border: 0px;
     
+    height: 1080px;
+    max-width: 1340px ;
+    max-height: 1080px;
+    margin: 0;
 }
 
-
-.container h1 {
+.fondo h1 {
     position: relative;
-    bottom: 150px;
+    bottom: 250px;
 }
 
-.container h2 {
+.fondo h2 {
     position: relative;
-    bottom: 150px;
+    bottom: 250px;
+     
 }
