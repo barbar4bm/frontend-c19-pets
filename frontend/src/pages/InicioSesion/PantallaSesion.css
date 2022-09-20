@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(23, 121, 151);
+    background-attachment: local;
+    background-size: 180vh;
+}
+.barra{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    border-radius: 1%;
+    background-attachment: fixed;
+}
+
+.text-clinica{
+    font: optional;
+    font-size: large;
+    text-align: left;
+    position: fixed;
+    left: 80px;
+    top: 6px;
+    color: aqua;
+}
+.text-nombre{
+    font: optional;
+    font-size: large;
+    text-align: left;
+    position: fixed;
+    left: 80px;
+    top: 30px;
+    color: darkmagenta;
+}
+
+.text-log{
+    font: optional;
+    font-size: large;
+    text-align: center;
+    position: fixed;
+    left: 540px;
+    top: 30px;
+    color: black;
+}
+
+.imagen-logo {
+    background-image: url(../../components/icono.jpg);
+    position: relative;
+    width:73px;
+    height:60px;
+
+}
+
+
+.tarjeta{
+    background-color: white;
+    position: relative;
+    width: 500px;
+    height:400px;
+    border-radius: 2%;
+    left: 29%;
+    bottom: -40px;
+}
+
+
+
