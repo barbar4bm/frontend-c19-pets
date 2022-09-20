@@ -1,6 +1,7 @@
 import React from 'react'
 import './PantallaInicio.css';
 import background from "../../components/logo.jpg";
+import {Barra} from "../../components/barra/barra.js"
 
 
 export const PantallaInicio = () => {
@@ -8,19 +9,10 @@ export const PantallaInicio = () => {
   return (
    <>
       <body>
-        <div className='container'>
+
             <div className='fondo' >
-              <button className='btn btn-secundary' style={{float:'right'}}>
-                    Acerca de
-              </button>
 
-              <button className='btn btn-secundary' style={{float:'right'}}>
-                  Agendar
-              </button>
-
-              <button className='btn btn-secundary' style={{float:'right'}}>
-                  Inicio Sesion 
-              </button>
+              <Barra/>
               <img src={`${background}`} 
                 alt="" >
               </img>
@@ -32,7 +24,6 @@ export const PantallaInicio = () => {
 
               
             </div>
-        </div>
       </body>
     </>
   )
