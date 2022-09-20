@@ -1,13 +1,4 @@
-.img2 {
-    width:73px ;
-    height:60px;
-    min-width:auto ;
-    min-height: auto ;
-    position: relative;
-    background-image: url(../../components/icono.jpg);
-    bottom: 560px;
-    left: 40px;
-}
+
 
 
 
@@ -25,20 +16,26 @@ h2 {
 
 
 
-
-.fondo img{
-    width: 100%;
-    height: auto;
-    margin: 0%;
+body {
+    background-image: url(../../components/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .fondo h1 {
     position: relative;
-    bottom: 250px;
+    top: 65vh;
 }
 
 .fondo h2 {
     position: relative;
-    bottom: 250px;
+   top:65vh;
      
+}
+
+.fondo img{
+    position: relative;
+    top:65vh;
+    left: 2.5vw
 }

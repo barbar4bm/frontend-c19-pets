@@ -13,7 +13,7 @@ export const Barra = () => {
             </button>
 
             <button className='btn btn-secundary' style={{ float: 'right' }}>
-                Inicio Sesion
+                Inicio Sesión
             </button>
         </div>
     )
