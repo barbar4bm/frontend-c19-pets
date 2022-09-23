@@ -1,36 +1,22 @@
-
-
-
-
-h1 {
-    color: darkmagenta;
-    left:40px;
-
-    
-}
-
-h2 {
-    color:aqua;
-    left:40px;  
-  }
-
-
-
-body {
+.fondo {
     background-image: url(../../components/logo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-attachment: fixed;
 }
 
 .fondo h1 {
     position: relative;
     top: 65vh;
+    color: darkmagenta;
+    left:40px;
 }
 
 .fondo h2 {
     position: relative;
    top:65vh;
+   color:aqua;
+   left:40px;  
      
 }
 

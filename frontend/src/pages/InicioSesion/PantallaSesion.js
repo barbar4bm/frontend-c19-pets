@@ -13,10 +13,8 @@ export const PantallaSesion = () => {
                 <div className='text-nombre'>Puertas del mar</div>
                 <div className='text-log'>iniciar sesión </div>
                 
-              </div>
-              
+              </div>      
             </div>
-            
             <div className='tarjeta'></div>
             
             
