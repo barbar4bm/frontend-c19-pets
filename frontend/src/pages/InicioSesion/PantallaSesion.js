@@ -30,7 +30,7 @@ export const PantallaSesion = () => {
                 className="form-control mt-1"
                 placeholder="Ingrese contraseña"
               />
-              <button type="submit" className="btn btn-primary" style={{ float: 'center' }} >
+              <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'30px' , left:'45px'}} >
                 Iniciar sesión
               </button>
             </div>
