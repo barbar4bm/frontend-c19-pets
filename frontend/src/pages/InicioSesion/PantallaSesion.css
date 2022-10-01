@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(207, 207, 207)
+    background-color: rgb(228, 227, 227)
 }
 .barra{
     background-color: white;
@@ -32,6 +32,7 @@ body {
     position: relative;
     color: darkmagenta;
     text-transform: uppercase;
+    font-weight: bolder;
     top: 10px;
     left: 80px;
     width:160px ;

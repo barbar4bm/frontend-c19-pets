@@ -7,7 +7,10 @@ import "../InicioSesion/PantallaSesion.css"
     method: 'GET'
   }
   ).then(response=>response.json()).then(json.password = console.log(json)).catch(err => alert("Alerta; Error"));
-}*/
+}
+*/
+
+
 
 export const PantallaSesion = () => {
   return (
@@ -38,8 +41,12 @@ export const PantallaSesion = () => {
                 className="form-control mt-1"
                 placeholder="Ingrese contraseña"
               />
-              <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'30px' , left:'45px'}} >
+              <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'70px' , left:'45px'}} >
                 Iniciar sesión
+              </button>
+
+              <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'120px' , left:'-45px'}} >
+                Volver
               </button>
             </div>
           </div>
