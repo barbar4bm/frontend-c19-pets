@@ -1,5 +1,13 @@
+//import { json } from 'express';
 import React from 'react'
 import "../InicioSesion/PantallaSesion.css"
+
+/*async function checkPass(user,password) {
+  const response = await fetch("http://localhost:3001/api/admin/${user}", {
+    method: 'GET'
+  }
+  ).then(response=>response.json()).then(json.password = console.log(json)).catch(err => alert("Alerta; Error"));
+}*/
 
 export const PantallaSesion = () => {
   return (

@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(33, 204, 204)
+    background-color: rgb(207, 207, 207)
 }
 .barra{
     background-color: white;
@@ -14,8 +14,6 @@ body {
     background-image: url(../../components/icono.jpg);
     width:73px;
     height:60px;
-  
-    
 }
 
 .text-clinica{
