@@ -41,6 +41,9 @@ export const PantallaSesion = () => {
                 className="form-control mt-1"
                 placeholder="Ingrese contraseña"
               />
+              <div className='link-olvidar'>
+                <a href=''>Olvidaste tu contraseña?</a>
+              </div>
               <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'70px' , left:'45px'}} >
                 Iniciar sesión
               </button>
@@ -48,6 +51,8 @@ export const PantallaSesion = () => {
               <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'120px' , left:'-45px'}} >
                 Volver
               </button>
+              
+              
             </div>
           </div>
         </div>
