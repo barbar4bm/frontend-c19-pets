@@ -4,7 +4,8 @@
     background-size:cover;
     background-attachment: fixed;
     width: 100%;
-    height:698px;
+    height:970px;
+    z-index: -1;
 }
 
 
@@ -14,6 +15,7 @@
     color: darkmagenta;
     width:fit-content;
     left:40px;
+    
 }
 
 .fondo h2 {

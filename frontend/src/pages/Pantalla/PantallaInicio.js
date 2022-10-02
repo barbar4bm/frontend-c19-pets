@@ -9,12 +9,16 @@ export const PantallaInicio = () => {
         
             <div className='fondo'> 
               <Barra/>
+              <div className='content'>
+            
               <img src={require("../../components/icono.jpg")} 
                 alt="">
               </img>
               <h2> CLINICA VETERINARIA</h2>
               <h1>PUERTAS DEL MAR</h1>
+              </div>
             </div>
+            
     
        
     </>

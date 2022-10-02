@@ -27,7 +27,7 @@ export const PantallaSesion = () => {
           </div>
         </div>
         <div className='tarjeta'>
-          <div className='container'>
+          <div className='container_p1'>
             <div className="form-group mt-3">
               <label>Email</label>
               <input
