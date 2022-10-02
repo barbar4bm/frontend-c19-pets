@@ -5,6 +5,7 @@ import {Products} from "../Products/Products"
 import { Card } from '../components/hero/Card'
 import {Hero} from "../components/hero/Hero"
 import "../style/main.scss"
+import { Testimonial } from '../components/testimonial/Testimonial'
 
 
 export const ComercePage = () => {
@@ -14,7 +15,9 @@ export const ComercePage = () => {
     <Hero />
     <Card />
     <Products />
+    <Testimonial />
     <Footer/>
+
     </>
   )
 }
