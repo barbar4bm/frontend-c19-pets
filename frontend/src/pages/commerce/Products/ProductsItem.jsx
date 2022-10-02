@@ -26,14 +26,14 @@ export const ProductsItem = ({ data }) => {
     return (
         <>
             <div className="product_items">{data.map((items) => (
-                <div className="box" key={items.id}>
+                <div className="box" key={items.codigo}>
                     <div className="img">
-                        <img src={items.cover} alt="" />
+                        <img src={items.imagen} alt="" />
                         <div className="overlay">
                             <button className='button'>
                                 <FiShoppingBag />
                             </button>
-                            <button className='button' onClick={()=> onOpenImage(items.cover)}>
+                            <button className='button' onClick={()=> onOpenImage(items.imagen)}>
                                 <FiSearch />
                             </button>
                             <button className='button'>
@@ -41,9 +41,9 @@ export const ProductsItem = ({ data }) => {
                             </button>
                         </div>
                         <div className="details">
-                            <h3 > {items.title} </h3>
+                            <h3 > {items.nombre} </h3>
                             <p>{items.author}</p>
-                            <p>Precio: ${items.price}</p>
+                            <p>Precio: ${items.valor}</p>
                         </div>
                     </div>
                 </div>
