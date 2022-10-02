@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Barra = () => {
     return (
         <>
-            < Link to="/">
+            < Link to="/about-us">
                 <button className='btn btn-secundary' style={{ float: 'right' }}>
                     Acerca de
                 </button>

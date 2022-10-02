@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './PantallaInicio.css';
 import { Barra } from '../../components/barra/barra';
 
 export const PantallaInicio = () => {
-
+  
   return (
    <>
         
