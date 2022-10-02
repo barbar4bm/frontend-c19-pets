@@ -1,0 +1,12 @@
+.cards {
+  display: grid;
+  @include grid(repeat(6, 1fr), 5px);
+  .card {
+    @include flex(center, none, center);
+
+    img {
+      width: 70px;
+      margin-right: $md;
+    }
+  }
+}
