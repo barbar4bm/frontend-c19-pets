@@ -17,6 +17,11 @@ export const Barra = () => {
                     Inicio Sesión
                 </button>
             </Link>
+            <Link to="/store">
+                <button className='btn btn-secundary' style={{ float: 'right' }} Link to="/store">
+                    Tienda
+                </button>
+            </Link>
 
         </>
     )
