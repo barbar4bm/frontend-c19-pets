@@ -13,8 +13,9 @@ export const ComercePage = () => {
     <>
     <Header/>
     <Hero />
-    <Card />
+    
     <Products />
+    <Card />
     <Testimonial />
     <Footer/>
 
