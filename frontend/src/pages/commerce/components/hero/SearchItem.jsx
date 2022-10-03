@@ -9,12 +9,12 @@ export const SearchItem = ({value , product , onSearch}) => {
             {product
             .filter((items)=>{
                 const searchkey = value.toLowerCase()
-                const title = items.title.toLowerCase() //change the name for the api response
+                const title = items.nombre.toLowerCase() //change the name for the api response
                 return searchkey && title.startsWith(searchkey) && title !== searchkey
             }).slice(0,10).map((items)=>(
-                <div className="box" key={items.id}>
+                <div className="box" key={items.codigo}>
                     <div className="img">
-                        <img src={items.cover} alt="" />
+                        <img src={items.imagen} alt="" />
                         <div className="overlay">
                             <button className='button'>
                                 <FiShoppingBag />
@@ -27,9 +27,9 @@ export const SearchItem = ({value , product , onSearch}) => {
                             </button>
                         </div>
                         <div className="details">
-                            <h3 > {items.title} </h3>
+                            <h3 > {items.nombre} </h3>
                             <p>{items.author}</p>
-                            <p>Precio: ${items.price}</p>
+                            <p>Precio: ${items.valor}</p>
                         </div>
                     </div>
                 </div>
