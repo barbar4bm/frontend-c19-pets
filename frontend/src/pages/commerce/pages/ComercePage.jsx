@@ -13,7 +13,6 @@ export const ComercePage = () => {
     <>
     <Header/>
     <Hero />
-    
     <Products />
     <Card />
     <Testimonial />
