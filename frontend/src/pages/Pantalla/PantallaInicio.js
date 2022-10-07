@@ -19,10 +19,10 @@ export const PantallaInicio = () => {
       </body>
       <div className='contenedor'>
          <div className='imagen-inicial'></div>
-         <div className='tarjet text-center'> Texto de información
+         <div className='tarjet text-center'> Respecto a nosotros
 
-          <p>Clinica especializada en atender a sus clientes de la manera mas segura y eficiente. </p> 
-          <p>Contamos con servicios de tienda, especialidad entre otras funcionalidades.</p> 
+          <p>Centro especializado en cirugía veterinaria y atención integral de mascotas. </p> 
+          <p>Contamos con servicios de clinica general y especializada.</p> 
           
          </div> 
       </div>
