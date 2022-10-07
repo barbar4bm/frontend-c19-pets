@@ -1,6 +1,7 @@
 //import { json } from 'express';
 import React from 'react'
 import "../InicioSesion/PantallaSesion.css"
+import { Link } from 'react-router-dom';
 
 /*async function checkPass(user,password) {
   const response = await fetch("http://localhost:3001/api/admin/${user}", {
@@ -47,11 +48,11 @@ export const PantallaSesion = () => {
               <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'70px' , left:'45px'}} >
                 Iniciar sesión
               </button>
-
-              <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'120px' , left:'-45px'}} >
-                Volver
-              </button>
-              
+              <Link to='/'>
+                <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'120px' , left:'-45px'}} >
+                  Volver
+                </button>
+              </Link>
               
             </div>
           </div>
