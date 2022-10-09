@@ -1,0 +1,40 @@
+.box1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border: solid 3px black;
+  border-radius: 5px;
+  top: 200px;
+  left: 400px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.box2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border: solid 3px black;
+  border-radius: 5px;
+  top: 200px;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.box3 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border: solid 3px black;
+  border-radius: 5px;
+  top: 200px;
+  left: 600px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+

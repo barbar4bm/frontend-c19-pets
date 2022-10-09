@@ -4,14 +4,19 @@ import { Link } from 'react-router-dom';
 export const Barra = () => {
     return (
         <>
+
             < Link to="/about-us">
                 <button className='btn btn-secundary' style={{ float: 'right' }}>
                     Acerca de
                 </button>
-            </Link>
+           
+            </Link >
+            <Link to="/agendar-hora">
             <button className='btn btn-secundary' style={{ float: 'right' }}>
                 Agendar
             </button>
+            </Link>
+            
             <Link to="/login" >
                 <button className='btn btn-secundary' style={{ float: 'right' }} Link to="/login">
                     Inicio Sesión

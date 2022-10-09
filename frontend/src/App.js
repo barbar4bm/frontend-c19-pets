@@ -5,7 +5,8 @@ import { PantallaSesion } from "./pages/InicioSesion/PantallaSesion.js";
 import { PantallaInicio } from "./pages/Pantalla/PantallaInicio.js";
 import {ComercePage} from "./pages/commerce/pages/ComercePage"
 import { AboutUs } from "./pages/aboutUs/index.jsx";
-import {AgendarHora} from "./pages/AgendarHora.jsx";
+import { AgendarHora} from "./pages/AgendarHora/AgendarHora.jsx";
+
 function App() {
   return (
     <div>
@@ -16,7 +17,7 @@ function App() {
           <Route path="/login" element={<PantallaSesion />} />
           <Route path="/store" element={<ComercePage />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/agendar-hora" element={<AgendarHora/>}/>
+          <Route path="/agendar-hora" element={<AgendarHora />}/>
         </Routes>
       </BrowserRouter>
 
