@@ -1,0 +1,95 @@
+body {
+    background-color: white;
+}
+.barra{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    border-radius: 1%;
+    background-attachment: local;
+}
+.imagen-logo {
+    background-image: url(../../components/icono.jpg);
+    width:73px;
+    height:60px;
+}
+
+.text-clinica{
+    position: relative;
+    color: rgb(89, 174, 243);
+    text-transform: uppercase;
+    top: 10px;
+    left: 80px;
+    width:180px ;
+    height: 20px;
+    box-sizing: border-box;
+    
+  
+}
+.text-nombre{
+    position: relative;
+    color: rgb(0, 2, 139);
+    text-transform: uppercase;
+    font-weight: bolder;
+    top: 10px;
+    left: 80px;
+    width:200px ;
+    height: 20px;
+    box-sizing: border-box;
+
+}
+.text-log{
+    position: relative;
+    color:black;
+    text-transform: uppercase;
+    top: -20px;
+    left:400px;
+    width:160px ;
+    height: 20px;
+    box-sizing: border-box;
+  
+}
+p{
+    color:black;
+    position: relative;
+    text-transform: uppercase;
+    top: 20px;
+    left: 80px;
+    width: 900px ;
+    height: 100px;
+    box-sizing: content-box;
+    
+}
+h1{
+    color:blue;
+   
+    position: relative;
+    text-transform: uppercase;
+    top: 20px;
+    left: 10px;
+    width:400px ;
+    height: 70px;
+    box-sizing: border-box;
+    
+}
+h5{
+    color:grey;
+    
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width:400px ;
+    height: 50px;
+    box-sizing: border-box;
+}
+h6{
+    color:grey;
+    font-family: "Homer Simpson UI";
+    position: relative;
+    line-height: 200%;
+    top: 20px;
+    left: 50px;
+    width:400px ;
+    height: 70px;
+    box-sizing: border-box;
+}
