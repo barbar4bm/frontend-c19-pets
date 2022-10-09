@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Barra = () => {
     return (
         <>
-            < Link to="/">
+            < Link to="/about-us">
                 <button className='btn btn-secundary' style={{ float: 'right' }}>
                     Acerca de
                 </button>
@@ -15,6 +15,11 @@ export const Barra = () => {
             <Link to="/login" >
                 <button className='btn btn-secundary' style={{ float: 'right' }} Link to="/login">
                     Inicio Sesión
+                </button>
+            </Link>
+            <Link to="/store">
+                <button className='btn btn-secundary' style={{ float: 'right' }} Link to="/store">
+                    Tienda
                 </button>
             </Link>
 
