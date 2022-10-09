@@ -26,6 +26,17 @@ export const PantallaInicio = () => {
           
          </div> 
       </div>
+      <div className='logo-facebook'>
+        <h6> Clínica Veterinaria Puertas del Mar</h6>
+      </div>
+      <div className='logo-twitter'>
+        <h6> Clínica Veterinaria Puertas del Mar</h6>
+      </div>
+       
+      <div className='logo-insta'>
+        <h6> Clínica Veterinaria Puertas del Mar</h6>
+      </div>
+        
       <Footer/>
        
     </>

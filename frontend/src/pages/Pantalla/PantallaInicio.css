@@ -36,3 +36,58 @@
     background-attachment: local;
     top: -250px;
 }
+
+.logo-facebook{
+    background-image:url(../../components/facebook35.png);
+    position: relative;
+    right: -50%;
+    width:35px;
+    height: 35px;
+}
+.logo-twitter{
+    background-image:url(../../components/twitt35.png);
+    position: relative;
+    right: -30%;
+    top:-34px;
+    width:35px;
+    height: 35px;
+}
+.logo-insta{
+    background-image:url(../../components/instagram35.png);
+    position: relative;
+    right: -70%;
+    top:-68px;
+    width:35px;
+    height: 35px;
+}
+
+.logo-facebook h6 {
+    font-size: small;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    right: -105%;
+    bottom: -10px;
+    
+}
+.logo-twitter h6 {
+    font-size: small;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    right: -105%;
+    bottom: -10px;
+    
+}
+.logo-insta h6 {
+    font-size: small;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    right: -105%;
+    bottom: -10px;
+    
+}
