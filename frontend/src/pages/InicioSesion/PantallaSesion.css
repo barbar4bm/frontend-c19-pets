@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(228, 227, 227)
+    background-color: rgb(161, 160, 160)
 }
 .barra{
     background-color: white;
@@ -18,11 +18,11 @@ body {
 
 .text-clinica{
     position: relative;
-    color: aqua;
+    color: rgb(89, 174, 243);
     text-transform: uppercase;
     top: 10px;
     left: 80px;
-    width:160px ;
+    width:180px ;
     height: 20px;
     box-sizing: border-box;
     
@@ -30,7 +30,7 @@ body {
 }
 .text-nombre{
     position: relative;
-    color: darkmagenta;
+    color: rgb(0, 2, 139);
     text-transform: uppercase;
     font-weight: bolder;
     top: 10px;

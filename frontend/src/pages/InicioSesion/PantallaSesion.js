@@ -2,6 +2,17 @@
 import React,{useState,useEffect} from 'react'
 import "../InicioSesion/PantallaSesion.css"
 import axios from 'axios'
+import { Link } from 'react-router-dom';
+
+/*async function checkPass(user,password) {
+  const response = await fetch("http://localhost:3001/api/admin/${user}", {
+    method: 'GET'
+  }
+  ).then(response=>response.json()).then(json.password = console.log(json)).catch(err => alert("Alerta; Error"));
+}
+*/
+
+
 
 export const PantallaSesion = () => {
   const [email,setEmail] = useState("")
@@ -69,11 +80,11 @@ export const PantallaSesion = () => {
                 <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'70px' , left:'45px'}} onClick={()=>onSubmit()} >
                 Iniciar sesión
               </button>
-
-              <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'120px' , left:'-45px'}}  >
-                Volver
-              </button>
-              
+              <Link to='/'>
+                <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'120px' , left:'-45px'}} >
+                  Volver
+                </button>
+              </Link>
               
             </div>
           </div>
