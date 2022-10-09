@@ -3,6 +3,7 @@ import './PantallaInicio.css';
 import { Barra } from '../../components/barra/barra';
 import { Footer } from '../commerce/commons/Footer';
 
+
 export const PantallaInicio = () => {
   
   return (
@@ -25,7 +26,45 @@ export const PantallaInicio = () => {
           <p>Contamos con servicios de clinica general y especializada.</p> 
           
          </div> 
+
+        <div className='text-servicios'>
+          Servicios
+        </div>
+
+        
+
       </div>
+
+      <div className='carrousel'>
+          <article className='card'>
+            <p>Consulta general</p>
+          </article>
+          <article className='card'>
+            <p>Cirugía general</p>
+          </article>
+          <article className='card'>
+            <p>Cirugía especializada</p>
+          </article>
+          <article className='card'>
+            <p>Interconsulta de especialistas</p>
+          </article>
+          <article className='card'>
+            <p>Radiología digital</p>
+          </article>
+          <article className='card'>
+            <p>Emergencias</p>
+          </article>
+          <article className='card'>
+            <p>Exámenes de laboratorio</p>
+          </article>
+          <article className='card'>
+            <p>Venta de alimentos</p>
+          </article>
+          <article className='card'>
+            <p>Estética de mascotas</p>
+          </article>
+      </div>
+
       <div className='logo-facebook'>
         <h6> Clínica Veterinaria Puertas del Mar</h6>
       </div>
@@ -36,6 +75,7 @@ export const PantallaInicio = () => {
       <div className='logo-insta'>
         <h6> Clínica Veterinaria Puertas del Mar</h6>
       </div>
+      
         
       <Footer/>
        
