@@ -1,35 +1,93 @@
-.fondo {
-    background-image: url(../../components/logo2.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-    width: 100%;
-    height:970px;
-    z-index: -1;
+.tarjet {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 350px;
+    position: relative;
+    right: -60%;
+    top: -470%;
+    border-radius: 2%;
+    border-color: whitesmoke;
+    border-style: outset;
+    background-attachment: local;
 }
 
-
-.fondo h1 {
+.imagen-inicial{
+    background-image: url(../../components/logo2.jpg);
+    width:650px;
+    height: 379px;
+    border-radius: 2%;
     position: relative;
-    top: 65vh;
-    color: darkmagenta;
-    width:fit-content;
-    left:40px;
+    background-attachment: local;
+    margin: inherit;
+
+}
+
+.contenedor .imagen-inicial {
+    right: -60px;
+    bottom: -120px;
+    background-attachment: local;
+    object-fit: contain;
+    opacity: .6;
+    transition: .5s;
     
 }
 
-.fondo h2 {
-    position: relative;
-   top:65vh;
-   color:aqua;
-   left:40px;  
-   box-sizing: content-box;
-   width:fit-content;
-     
+.contenedor .tarjet{
+    background-attachment: local;
+    top: -250px;
 }
 
-.fondo img{
+.logo-facebook{
+    background-image:url(../../components/facebook35.png);
     position: relative;
-    top:65vh;
-    left: 2.5vw
+    right: -50%;
+    width:35px;
+    height: 35px;
+}
+.logo-twitter{
+    background-image:url(../../components/twitt35.png);
+    position: relative;
+    right: -30%;
+    top:-34px;
+    width:35px;
+    height: 35px;
+}
+.logo-insta{
+    background-image:url(../../components/instagram35.png);
+    position: relative;
+    right: -70%;
+    top:-68px;
+    width:35px;
+    height: 35px;
+}
+
+.logo-facebook h6 {
+    font-size: small;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    right: -105%;
+    bottom: -10px;
+    
+}
+.logo-twitter h6 {
+    font-size: small;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    right: -105%;
+    bottom: -10px;
+    
+}
+.logo-insta h6 {
+    font-size: small;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    right: -105%;
+    bottom: -10px;
+    
 }
