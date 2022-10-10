@@ -128,3 +128,15 @@
     top: -60px;
     font-size: larger;
 }
+
+.fondo-huella{
+    background-image:url(../../components/huella100.png) ;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    right:-73%;
+    bottom: -25%;
+    object-fit: contain;
+    opacity: .6;
+    transition: .5s;
+}

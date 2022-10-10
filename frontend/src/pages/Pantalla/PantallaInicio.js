@@ -18,22 +18,22 @@ export const PantallaInicio = () => {
         </div>  
         
       </body>
-      <div className='contenedor'>
-         <div className='imagen-inicial'></div>
-         <div className='tarjet text-center'> Respecto a nosotros
-
-          <p>Centro especializado en cirugía veterinaria y atención integral de mascotas. </p> 
-          <p>Contamos con servicios de clinica general y especializada.</p> 
-          
-         </div> 
-
-        <div className='text-servicios'>
-          Servicios
-        </div>
-
         
+        <div className='contenedor'>
+          <div className='imagen-inicial'></div>
+          <div className='tarjet text-center'> Respecto a nosotros
 
-      </div>
+            <p>Centro especializado en cirugía veterinaria y atención integral de mascotas. </p> 
+            <p>Contamos con servicios de clinica general y especializada.</p> 
+            <div className='fondo-huella'></div>
+          </div> 
+         
+          <div className='text-servicios'>
+            Servicios
+          </div>
+
+        </div>
+       
 
       <div className='carrousel'>
           <article className='card'>
