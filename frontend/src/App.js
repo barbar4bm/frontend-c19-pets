@@ -1,14 +1,15 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+//import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { PantallaSesion } from "./pages/InicioSesion/PantallaSesion.js";
-import { PantallaInicio } from "./pages/Pantalla/PantallaInicio.js";
-import {ComercePage} from "./pages/commerce/pages/ComercePage"
-import { AboutUs } from "./pages/aboutUs/index.jsx";
+//import { PantallaSesion } from "./pages/InicioSesion/PantallaSesion.js";
+//import { PantallaInicio } from "./pages/Pantalla/PantallaInicio.js";
+//import {ComercePage} from "./pages/commerce/pages/ComercePage"
+//import { AboutUs } from "./pages/aboutUs/index.jsx";
+import {UsuarioInterfaz} from './pages/UsuarioInterfaz/UsuarioInterfaz';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+     {/*<BrowserRouter>
         
         <Routes>
           <Route path="/" element={<PantallaInicio />} />
@@ -17,6 +18,8 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
+  */} 
+      {<UsuarioInterfaz/>}
 
     </div>
   );
