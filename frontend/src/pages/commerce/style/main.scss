@@ -11,6 +11,7 @@
 @import "responsive";
 @import "details";
 @import "searchItem";
+@import "card2";
 
 body {
   background: $light;
@@ -49,6 +50,14 @@ p {
   font-size: $md;
 }
 .card {
+  @include width(none, none, $white, none, 10px, 20px);
+  background: $white;
+  @include transition;
+  &:hover {
+    @include shadow(-5px 9px 20px 0px rgb(23 45 89 / 3%));
+  }
+}
+.card2 {
   @include width(none, none, $white, none, 10px, 20px);
   background: $white;
   @include transition;

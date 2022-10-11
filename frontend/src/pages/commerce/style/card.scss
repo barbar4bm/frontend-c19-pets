@@ -1,6 +1,6 @@
 .cards {
   display: grid;
-  @include grid(repeat(6, 1fr), 5px);
+  @include grid(repeat(5, 1fr), 5px);
   .card {
     @include flex(center, none, center);
 

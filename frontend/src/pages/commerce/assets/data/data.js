@@ -46,6 +46,9 @@ export const hero = [
     cover: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclinicaveterinarialosbermejales.com%2Fwp-content%2Fuploads%2F2019%2F03%2Fdog-3.png&f=1&nofb=1&ipt=78de53f0b77d81919d162db5b5772e9cd5265e3d4fbdb1b28e2ef07796154960&ipo=images",
     name: "Radiología digital",
       },
+
+]
+export const hero2 = [
   {
     id: 6,
     cover: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-icons.com%2Ficons2%2F623%2FPNG%2F512%2Fsign-emergency-code-sos_23_icon-icons.com_57202.png&f=1&nofb=1&ipt=38ebf14aaa1e2b54456c3b4ac2c5f378c74124a23750729ed5bc42c60cf2986a&ipo=images",
