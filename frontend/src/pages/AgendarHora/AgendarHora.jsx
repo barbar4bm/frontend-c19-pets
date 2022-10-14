@@ -2,7 +2,7 @@ import React from "react";
 import "./AgendarHora.css";
 import { Barra } from "../../components/barra/barra";
 
-export const AgendarHora = () => {
+export const scheduleTime = () => {
   return (
     <>
       <Barra />
