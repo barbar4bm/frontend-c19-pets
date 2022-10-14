@@ -19,8 +19,8 @@ function App() {
         </Routes>
       </BrowserRouter>
   */} 
-      {<UsuarioInterfaz/>}
 
+    <UsuarioInterfaz/>
     </div>
   );
 
