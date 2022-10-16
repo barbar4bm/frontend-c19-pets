@@ -16,14 +16,16 @@
     width:650px;
     height: 379px;
     border-radius: 2%;
+
     position: relative;
     background-attachment: local;
+    box-sizing: border-box;
     margin: inherit;
 
 }
 
 .contenedor .imagen-inicial {
-    right: -60px;
+    right: -5%;
     bottom: -120px;
     background-attachment: local;
     object-fit: contain;
@@ -69,6 +71,10 @@
     box-sizing: border-box;
     right: -105%;
     bottom: -10px;
+    gap: 1.2rem;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
     
 }
 .logo-twitter h6 {
@@ -79,6 +85,10 @@
     box-sizing: border-box;
     right: -105%;
     bottom: -10px;
+    gap: 1.2rem;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
     
 }
 .logo-insta h6 {
@@ -89,5 +99,44 @@
     box-sizing: border-box;
     right: -105%;
     bottom: -10px;
+    gap: 1.2rem;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
     
+}
+
+.carrousel{
+    position: relative;
+    top: -50px;
+    display: grid;
+    grid-auto-flow: column;
+    width: fit-content;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.text-servicios{
+    background-color: blue;
+    color: white ;
+    text-align: center;
+    position: relative;
+    top: -60px;
+    font-size: larger;
+}
+
+.fondo-huella{
+    background-image:url(../../components/huella100.png) ;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    right:-73%;
+    bottom: -25%;
+    object-fit: contain;
+    opacity: .6;
+    transition: .5s;
 }
