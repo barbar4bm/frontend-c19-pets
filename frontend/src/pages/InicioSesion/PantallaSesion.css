@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(161, 160, 160)
+    background-color: rgb(161, 160, 160);
 }
 .barra{
     background-color: white;
@@ -25,7 +25,8 @@ body {
     width:180px ;
     height: 20px;
     box-sizing: border-box;
-    
+    margin: 1px;
+       
   
 }
 .text-nombre{
@@ -69,6 +70,5 @@ body {
 
 .boton-n1 button{
     position: inherit;
-    
 
 }

@@ -23,8 +23,8 @@ export const PantallaInicio = () => {
           <div className='imagen-inicial'></div>
           <div className='tarjet text-center'> Respecto a nosotros
 
-            <p>Centro especializado en cirugía veterinaria y atención integral de mascotas. </p> 
-            <p>Contamos con servicios de clinica general y especializada.</p> 
+            <text>Centro especializado en cirugía veterinaria y atención integral de mascotas. </text> 
+            <text>Contamos con servicios de clinica general y especializada.</text> 
             <div className='fondo-huella'></div>
           </div> 
          
@@ -37,31 +37,31 @@ export const PantallaInicio = () => {
 
       <div className='carrousel'>
           <article className='card'>
-            <p>Consulta general</p>
+            <text>Consulta general</text>
           </article>
           <article className='card'>
-            <p>Cirugía general</p>
+            <text>Cirugía general</text>
           </article>
           <article className='card'>
-            <p>Cirugía especializada</p>
+            <text>Cirugía especializada</text>
           </article>
           <article className='card'>
-            <p>Interconsulta de especialistas</p>
+            <text>Interconsulta de especialistas</text>
           </article>
           <article className='card'>
-            <p>Radiología digital</p>
+            <text>Radiología digital</text>
           </article>
           <article className='card'>
-            <p>Emergencias</p>
+            <text>Emergencias</text>
           </article>
           <article className='card'>
-            <p>Exámenes de laboratorio</p>
+            <text>Exámenes de laboratorio</text>
           </article>
           <article className='card'>
-            <p>Venta de alimentos</p>
+            <text>Venta de alimentos</text>
           </article>
           <article className='card'>
-            <p>Estética de mascotas</p>
+            <text>Estética de mascotas</text>
           </article>
       </div>
 

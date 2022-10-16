@@ -1,6 +1,5 @@
 
 //import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 //import { PantallaSesion } from "./pages/InicioSesion/PantallaSesion.js";
 //import { PantallaInicio } from "./pages/Pantalla/PantallaInicio.js";
 //import {ComercePage} from "./pages/commerce/pages/ComercePage"
