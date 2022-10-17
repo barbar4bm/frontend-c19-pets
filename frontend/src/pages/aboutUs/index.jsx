@@ -2,6 +2,7 @@
 import React from "react";
 import "./AboutUs.css";
 import { Barra } from "../../components/barra/barra";
+import { Footer } from "../commerce/commons/Footer";
 
 
 export const AboutUs = () => {
@@ -43,6 +44,7 @@ export const AboutUs = () => {
           </h6>
         </body>
       </div>
+      <Footer/>
     </>
   );
 };

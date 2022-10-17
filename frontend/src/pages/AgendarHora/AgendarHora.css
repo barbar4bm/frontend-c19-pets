@@ -3,7 +3,7 @@
   width: 200px;
   height: 200px;
   background: white;
-  border: solid 3px black;
+  border: solid 3px MidnightBlue;
   border-radius: 5px;
   top: 200px;
   left: 400px;
@@ -16,7 +16,7 @@
   width: 200px;
   height: 200px;
   background: white;
-  border: solid 3px black;
+  border: solid 3px MidnightBlue;
   border-radius: 5px;
   top: 200px;
   left: 180px;
@@ -29,12 +29,16 @@
   width: 200px;
   height: 200px;
   background: white;
-  border: solid 3px black;
+  border: solid 3px MidnightBlue;
   border-radius: 5px;
   top: 200px;
   left: 610px;
   width: 200px;
   height: 200px;
   text-align: center;
+ 
 }
+
+
+
 
