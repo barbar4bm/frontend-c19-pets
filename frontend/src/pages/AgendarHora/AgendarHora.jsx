@@ -5,6 +5,7 @@ import { Barra } from "../../components/barra/barra";
 export const AgendarHora = () => {
   return (
     <>
+    
       <Barra />
 
       <div style={{ marginBottom: "3000px" }}>
@@ -24,6 +25,7 @@ export const AgendarHora = () => {
           <div class="box3">Anular hora</div>
         </body>
       </div>
+           
     </>
   );
 };
