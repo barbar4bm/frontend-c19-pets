@@ -1,6 +1,11 @@
 import React from 'react'
 import './UsuarioInterfaz.css'
 
+//probando el objeto que se debe de obtener
+const Usuario = {
+  nombre:'Luis Felipe',
+  especialidad:'Veterinario'
+}
 
 export const UsuarioInterfaz = () => {
   return (
@@ -14,19 +19,21 @@ export const UsuarioInterfaz = () => {
           </div>
 
           <div className='boton-salir'>
-            
               <button className='btn btn-secundary' style={{float:'right'}}>Cerrar</button>
-           
           </div>
          
         </div>  
 
         
-        <div className='user_profile'> ⭐ Usuario : Obtener info del usuario </div>
+        <div className='user_profile'> ⭐ Usuario : {Usuario.nombre} 
+          <div className='text text-center'> {Usuario.especialidad}</div>
+        </div>
+
+
         <div className='sidebar'>
         
           <ul>
-            <li><a href='#'> 📅 Atenciones </a></li>
+            <li><a href='#'> 📅 Atenciones </a></li>  
             <li><a href='#'> 🔎 Busqueda </a></li>
             <li><a href='#'> ❌ Eliminar Hora</a></li>
           </ul>
