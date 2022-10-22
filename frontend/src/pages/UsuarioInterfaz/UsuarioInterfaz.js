@@ -41,7 +41,18 @@ export const UsuarioInterfaz = () => {
          
         </div>
         <div className='midbar'>
-            Aca debo mostrar la información
+        <table className='table table-hover' >
+              <thead className='table'> 
+                <tr>
+                  <th>Cliente</th>
+                  <th>Mascota</th>
+                  <th>Servicio</th>
+                  <th>Fecha</th>
+                </tr>
+                
+              </thead>
+
+            </table>
         </div>
         <div className='foot-page'>
           <p className='text text-center' style={{color:'white'}}> Información de nosotros por cualquier tipo de problema </p>
