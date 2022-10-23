@@ -54,7 +54,7 @@ body {
   
 }
 p{
-    color:black;
+    color:blue;
     position:relative;
     text-transform: uppercase;
     top: 20px;
@@ -66,7 +66,6 @@ p{
 }
 h1{
     color:blue;
-   
     position: relative;
     text-transform: uppercase;
     top: 20px;
@@ -77,7 +76,7 @@ h1{
     
 }
 h5{
-    color:grey;
+    color:black;
     
     position: relative;
     top: 20px;

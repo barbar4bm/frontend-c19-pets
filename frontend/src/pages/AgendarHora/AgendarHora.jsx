@@ -20,6 +20,7 @@ export const AgendarHora = () => {
           <b>
             <div className="text-log">Agendar hora</div>
           </b>
+        
           <div class="box1"><Link to="/hora">
             <button className="btn btn-secundary" >
               Agendar Hora
