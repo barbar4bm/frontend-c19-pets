@@ -114,6 +114,9 @@ export const Header = () => {
                     <div className="details_total">
                       <h4>Total : ${price}</h4>
                     </div>
+                    <div className="details_comprar">
+                      <button className='boton' onClick={()=>navigate(`/checkout`)}><h3 style={{color:"white"}}>Comprar</h3></button>
+                    </div>
                   </section>
                 ): (
                   <div className="empty">

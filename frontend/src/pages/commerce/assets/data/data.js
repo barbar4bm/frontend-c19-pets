@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai"
 export const navlist = [
   {
     text: "home",
-    path: "/",
+    path: "/store",
   },
   {
     text: "agendar",
@@ -69,6 +69,11 @@ export const hero2 = [
     cover: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fae%2F1b%2F96%2Fae1b96f3b638a38894573321178c5af3.jpg&f=1&nofb=1&ipt=0c2a6c5142418b0707690725e226fd7a9f7bb0c4c342dedb5b6def35e7ef499e&ipo=images",
     name: "Estética de mascotas",
     
+  },{
+  id: 10,
+  cover: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7prqwa5ZxNAerVI9FfCqRQHaFE%26pid%3DApi&f=1&ipt=b194ad03fd892f45cd843b84b73288c567c2a86d7f5df6aa6df39fecce302e74&ipo=images",
+  name: "Reservas de atencion ONLINE",
+  
   },
 ]
 export const products = [
