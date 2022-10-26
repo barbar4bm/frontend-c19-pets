@@ -1,7 +1,9 @@
-body{
-    background-color: rgb(252, 253, 253);
+.body{
+    background-color:white;
     width: 100%;
     height: 100%;
+    min-width: 600px;
+    min-height: 400px;
 }
 
 .barra-header{
@@ -78,6 +80,8 @@ body{
 
 .sidebar ul li a:hover{
     opacity: .4; 
+    color: blue;
+    
 }
 .midbar{
     background-color:white;
