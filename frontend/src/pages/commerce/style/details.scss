@@ -45,6 +45,7 @@ article {
           .button {
             @include width(40%, auto, $blue, $white, 0, 15px);
             margin-left: 30px;
+            
           }
         }
         .desc {

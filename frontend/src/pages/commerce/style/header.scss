@@ -97,10 +97,16 @@ header {
       &_total {
         padding-top: 7px;
       }
+      &_comprar {
+        @include width(40%, auto, $blue, $white, 0, 15px);
+        margin-left: 120px;
+        border-radius: 50px;
+      }
     }
     .hideCart {
       display: none;
     }
+
   }
 }
 header.active {

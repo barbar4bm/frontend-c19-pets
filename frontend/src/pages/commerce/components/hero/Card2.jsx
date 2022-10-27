@@ -1,11 +1,11 @@
 import React from 'react'
-import {hero, hero2} from '../../assets/data/data'
+import {hero2} from '../../assets/data/data'
 
-export const Card = () => {
+export const Card2 = () => {
   return (
     <>
     <section className='cards'>
-      {hero.map((item)=>(
+      {hero2.map((item)=>(
         <div className="card" key={item.id}>
           <div className="left">
             <img src={item.cover} />
@@ -16,7 +16,6 @@ export const Card = () => {
         </div>
       ))}
     </section>
-
     </>
   )
 }

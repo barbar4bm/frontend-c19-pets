@@ -8,7 +8,7 @@
 
   &::after {
     content: "";
-    @include positions(absolute, 50px, none, 0, none, 130%, 100vh);
+    @include positions(relative, 50px, none, 0, none, 130%, 100vh);
     background-image: url("../assets/images/bg-dot.png");
     background-size: contain;
     background-repeat: no-repeat;

@@ -1,0 +1,13 @@
+.cards2 {
+    display: grid;
+    @include grid(repeat(4, 1fr), 5px);
+    .card2 {
+      @include flex(center, none, center);
+  
+      img {
+        width: 70px;
+        margin-right: $md;
+      }
+    }
+  }
+  

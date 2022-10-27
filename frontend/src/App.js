@@ -7,10 +7,17 @@ import {ComercePage} from "./pages/commerce/pages/ComercePage"
 import { AboutUs } from "./pages/aboutUs/index.jsx";
 import {UsuarioInterfaz} from './pages/UsuarioInterfaz/UsuarioInterfaz';
 import {ReservaVet} from "./pages/reservaVet/ReservaVet"
+import {Provider} from 'react-redux'
+import store from "./controllers/store.js";
+import { Details } from "./pages/commerce/details/Details.jsx";
+import { Checkout } from "./pages/commerce/commons/Checkout"
+import { Delivery } from "./pages/commerce/commons/Delivery.jsx";
 function App() {
   return (
-    <div>
-     <BrowserRouter>
+    <Provider store={store}>
+
+    
+      <BrowserRouter>
         
         <Routes>
           <Route path="/" element={<PantallaInicio />} />
@@ -19,10 +26,15 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/interfaz-usuario" element={<UsuarioInterfaz/>} />
           <Route path="/agenda-vet" element={<ReservaVet />} />
+          <Route path="/cart/:id" element={<Details />}/>
+          <Route path="/checkout" element={<Checkout />}/>
+          <Route path="/deliveryForm" element={<Delivery />}/>
+          
         </Routes>
       </BrowserRouter>
 
-    </div>
+    
+  </Provider>
   );
 
 }

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import {FiShoppingBag,FiSearch} from 'react-icons/fi'
 import {AiOutlineClose, AiOutlineHeart} from 'react-icons/ai'
+import { useDispatch } from 'react-redux'
+import { ADD } from '../../../controllers/action'
 export const ProductsItem = ({ data }) => {
     //const [Users, fetchUsers] = useState([])
     const url = 'http://localhost:3001/api/client'
@@ -23,6 +25,10 @@ export const ProductsItem = ({ data }) => {
         setOpenImage(true)
 
     }
+    const dispatch = useDispatch()
+    const addToCart = (e)=>{
+        dispatch(ADD(e))
+    }
     return (
         <>
             <div className="product_items">{data.map((items) => (
@@ -31,7 +37,7 @@ export const ProductsItem = ({ data }) => {
                         <img src={items.imagen} alt="" />
                         <div className="overlay">
                             <button className='button'>
-                                <FiShoppingBag />
+                                <FiShoppingBag onClick={()=>addToCart(items)} />
                             </button>
                             <button className='button' onClick={()=> onOpenImage(items.imagen)}>
                                 <FiSearch />
