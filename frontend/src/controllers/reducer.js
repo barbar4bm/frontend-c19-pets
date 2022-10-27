@@ -11,32 +11,32 @@ export const cartReducer = (state = initialStore, action)=>{
                 ...state,
                 carts :[...state.carts,action.payload],
             }*/
-            const itemIndex = state.carts.findIndex((item)=> item.id === action.payload.id)
+            const itemIndex = state.carts.findIndex((item)=> item.codigo === action.payload.codigo)
             if (itemIndex >= 0){
-                state.carts[itemIndex].qty += 1
+                state.carts[itemIndex].cantidad += 1
             }else{
-                const temp = { ...action.payload, qty:1}
+                const temp = { ...action.payload, cantidad:1}
                 return {
                     ...state,
                     carts:[...state.carts,temp],
                 }
             }
             case REMOVE:
-                const data = state.carts.filter((el)=> el.id !== action.payload)
+                const data = state.carts.filter((el)=> el.codigo !== action.payload)
                 return {
                     ...state,
                     carts: data,
                 }
             case REMOVE_ITEM :
-                const itemIndex_desc = state.carts.findIndex((item)=> item.id === action.payload.id)
-                if (state.carts[itemIndex_desc].qty >= 1){
-                    const delete_item = (state.carts[itemIndex_desc].qty -= 1)
+                const itemIndex_desc = state.carts.findIndex((item)=> item.codigo === action.payload.codigo)
+                if (state.carts[itemIndex_desc].cantidad >= 1){
+                    const delete_item = (state.carts[itemIndex_desc].cantidad -= 1)
                     return {
                         ...state,
                         carts: [...state.carts],
                     }
-                }else if (state.carts[itemIndex_desc].qty === 1){
-                    const data = state.carts.filter((el)=>el.id !== action.payload.id)
+                }else if (state.carts[itemIndex_desc].cantidad === 1){
+                    const data = state.carts.filter((el)=>el.codigo !== action.payload.codigo)
                     return {
                         ...state,
                         carts : data,

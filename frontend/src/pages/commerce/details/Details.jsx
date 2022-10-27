@@ -11,17 +11,17 @@ import {Header} from '../commons/Header'
 export const Details = () => {
     const [data, setData] = useState([])
     const getData = useSelector((state) => state.cartReducer.carts)
-    const { id } =useParams()
+    const { codigo } =useParams()
     const navigate = useNavigate()
     const compare = ()=>{
         let compareData = getData.filter((e)=>{
-            return e.id == id
+            return e.codigo == codigo
         })
         setData(compareData)
     }
     useEffect(()=>{
         compare()
-    },[id])
+    },[codigo])
     const dispatch = useDispatch()
     const increment = (e)=>{
         dispatch(ADD(e))
@@ -29,8 +29,8 @@ export const Details = () => {
     const decrement = (item)=>{
         dispatch(REMOVE_INT(item))
     }
-    const dels = (id) =>{
-        dispatch(DELETE(id))
+    const dels = (codigo) =>{
+        dispatch(DELETE(codigo))
         navigate("/store")
     }
     return (
@@ -46,7 +46,7 @@ export const Details = () => {
                                 <img src={item.cover} alt=''></img>
                             </div>
                             <div className="details_content_detail">
-                                <h1>{item.title}</h1>
+                                <h1>{item.nombre}</h1>
                                 <div className="rating">
                                     <MdStarRate />
                                     <MdStarRate />
@@ -55,15 +55,14 @@ export const Details = () => {
                                     <MdStarRate />
                                     <label htmlFor=''>(1 comentario)</label>
                                 </div>
-                                <h3>${item.price * item.qty}</h3>
-                                <p>{item.author}</p>
+                                <h3>${item.valor * item.cantidad}</h3>
                                 <div className="qty">
                                     <div className="count">
                                         <button onClick={() => increment(item)}>
                                             <AiOutlinePlus />
                                         </button>
-                                        <span>{item.qty}</span>
-                                        <button onClick={item.qty <= 1 ? () => dels(item.id) : () => decrement(item)}>
+                                        <span>{item.cantidad}</span>
+                                        <button onClick={item.cantidad <= 1 ? () => dels(item.codigo) : () => decrement(item)}>
                                             <AiOutlineMinus />
                                         </button>
                                     </div>
@@ -71,7 +70,7 @@ export const Details = () => {
                                 </div>
                                 <div className="desc">
                                         <h4>CATEGORIA DEL PRODUCTO</h4>
-                                        <p>{item.category}</p>
+                                        <p>{item.categoria}</p>
                                         <h4>Detalles Productos</h4>
                                         <ul>
                                             <li>

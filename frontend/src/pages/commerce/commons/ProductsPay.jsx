@@ -13,9 +13,9 @@ export const ProductsPay = () => {
     const getData = useSelector((state) => state.cartReducer.carts)
     const carrito = JSON.stringify(getData);
     const totals = () => {
-        let price = 0
+        let valor = 0
         getData.map((e, i) => {
-            price = parseFloat(e.price) * e.qty + price
+            valor = parseFloat(e.valor) * e.cantidad + valor
         })
     }
     const dispatch = useDispatch()
@@ -25,8 +25,8 @@ export const ProductsPay = () => {
     const decrement = (item)=>{
         dispatch(REMOVE_INT(item))
     }
-    const dels = (id) =>{
-        dispatch(DELETE(id))
+    const dels = (codigo) =>{
+        dispatch(DELETE(codigo))
     }
     useEffect(() => {
         setData(getData)
@@ -42,19 +42,18 @@ export const ProductsPay = () => {
                     {data.map((item) => (
                         <div className="details_content">
                             <div className="details_content_img" style={{height:160,width:160}}>
-                                <img src={item.cover} alt=''></img>
+                                <img src={item.imagen} alt=''></img>
                             </div>
                             <div className="details_content_detail">
-                                <h1>{item.title} X {item.qty}</h1>
-                                <h3>${item.price * item.qty}</h3>
-                                <p>{item.author}</p>
+                                <h1>{item.nombre} X {item.cantidad}</h1>
+                                <h3>${item.valor * item.cantidad}</h3>
                                 <div className="qty">
                                     <div className="count">
                                         <button onClick={() => increment(item)}>
                                             <AiOutlinePlus />
                                         </button>
-                                        <span>{item.qty}</span>
-                                        <button onClick={item.qty <= 1 ? () => dels(item.id) : () => decrement(item)}>
+                                        <span>{item.cantidad}</span>
+                                        <button onClick={item.cantidad <= 1 ? () => dels(item.codigo) : () => decrement(item)}>
                                             <AiOutlineMinus />
                                         </button>
                                     </div>

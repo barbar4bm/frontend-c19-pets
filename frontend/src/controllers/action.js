@@ -6,10 +6,10 @@ export const ADD = (item) => {
         payload: item,
     }
 }
-export const DELETE = (id) => {
+export const DELETE = (codigo) => {
     return {
         type: REMOVE,
-        payload: id,
+        payload: codigo,
     }
 }
 export const REMOVE_INT = (item) => {

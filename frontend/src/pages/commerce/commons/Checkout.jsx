@@ -45,7 +45,7 @@ export const Checkout = () => {
     const totals = () => {
         let price = 0
         getData.map((e, i) => {
-            price = parseFloat(e.price) * e.qty + price
+            price = parseFloat(e.valor) * e.cantidad + price
             //console.log(e);
         })
         setPrice(price)
