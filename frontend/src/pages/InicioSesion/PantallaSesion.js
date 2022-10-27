@@ -81,7 +81,7 @@ export const PantallaSesion = () => {
                 Iniciar sesión
               </button>
               <Link to='/'>
-                <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'120px' , left:'-45px'}} >
+                <button type="submit" className="btn btn-primary" style={{ float: 'center' ,top:'120px' , left:'-55px'}} >
                   Volver
                 </button>
               </Link>
