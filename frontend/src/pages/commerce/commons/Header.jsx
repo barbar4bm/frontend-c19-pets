@@ -1,27 +1,39 @@
-import React , { useEffect, useState } from 'react'
+import React , { useEffect, useState, useTransition } from 'react'
 import logo from '../assets/images/logoLetter.jpeg'
 import cartimg from '../assets/images/cart.png'
 import {BiSearch} from 'react-icons/bi'
 import {BsBagCheck} from 'react-icons/bs'
 import {RiUser3Line} from 'react-icons/ri'
 import {AiOutlineHeart,AiOutlineMenu,AiOutlineClose,AiOutlineDelete} from 'react-icons/ai'
+import { FiLogOut } from 'react-icons/fi' 
 import { navlist } from '../assets/data/data'
 import {Link,  useNavigate} from 'react-router-dom'
 import { connect ,useDispatch, useSelector } from 'react-redux'
 import {DELETE} from '../../../controllers/action'
+import { useAuth } from '../../InicioSesion/context/authContext'
+import { async } from '@firebase/util'
+import { Dna } from  'react-loader-spinner'
 
 export const Header = () => {
   window.addEventListener("scroll", function() {
     const header = this.document.querySelector(".header")
     header.classList.toggle("active",this.window.scrollY > 100)
   })
+  //user login
+  const {user, logout, loading } = useAuth()
   const [mobile,setMobile] = useState(false)
+
   //sumar articulos al carro
   const getData = useSelector((state) => state.cartReducer.carts)
-  console.log(getData);
+  //console.log(getData);
   const [cartList,setCartList] = useState(false)
   const handleClose =()=>{
     setCartList(null)
+  }
+  //logout()
+
+  const handleLogOut = async () => {
+    await logout()
   }
   //delete an element 
   const dispatch = useDispatch()
@@ -78,6 +90,10 @@ export const Header = () => {
             <div className="right_user">
               <Link to={'/login'}><RiUser3Line className='userIcon heIcon'></RiUser3Line></Link>
             </div>
+            <div className="right_user">
+            <Link to={'/'} onClick={()=>handleLogOut()} ><FiLogOut className='userIcon heIcon'></FiLogOut></Link>
+            </div>
+            <h6 disabled style={{fontSize:'20', marginRight:20,marginLeft:10}}>{ user == null ? '' : user.email}</h6>
             <div className="rigth_card">
               <button className='button' onClick={()=> setCartList(!cartList)}>
                 <BsBagCheck className='shop heIcon'></BsBagCheck>
