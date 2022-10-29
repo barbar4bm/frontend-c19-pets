@@ -93,7 +93,7 @@ export const Header = () => {
             <div className="right_user">
             <Link to={'/'} onClick={()=>handleLogOut()} ><FiLogOut className='userIcon heIcon'></FiLogOut></Link>
             </div>
-            <h6 disabled style={{fontSize:'20', marginRight:20,marginLeft:10}}>{ user == null ? '' : user.email}</h6>
+            <h6 disabled style={{fontSize:'20', marginRight:20,marginLeft:10,marginTop:20}}>{ user == null ? '' : user.email} || {user == null ? '' : user.displayName}</h6>
             <div className="rigth_card">
               <button className='button' onClick={()=> setCartList(!cartList)}>
                 <BsBagCheck className='shop heIcon'></BsBagCheck>

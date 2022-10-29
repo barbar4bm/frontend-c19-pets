@@ -63,6 +63,17 @@ body {
     overflow:scroll;
 
 }
+.tarjeta_p1{
+    background-color: white;
+    position: relative;
+    width: 540px;
+    height:570px;
+    border-radius: 4%;
+    left: 31%;
+    bottom: -50px;
+    overflow:scroll;
+
+}
 
 .container_p1{
     display: flex;

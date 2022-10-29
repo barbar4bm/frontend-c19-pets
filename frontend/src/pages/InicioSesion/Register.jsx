@@ -33,7 +33,7 @@ export const Register = () => {
         <>
             <Header />
             <body>
-                <Form className='tarjeta' onSubmit={handleSubmit(saveData)}>
+                <Form className='tarjeta' style={{height:600}}  onSubmit={handleSubmit(saveData)}>
                     <h3 style={{ padding: 20 }}>Registrar</h3>
                     <Form.Field>
                         <label>Email</label>

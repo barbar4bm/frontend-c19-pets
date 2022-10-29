@@ -12,6 +12,9 @@ import { Delivery } from "./pages/commerce/commons/Delivery.jsx";
 import { Register } from "./pages/InicioSesion/Register.jsx";
 import { AuthProvider } from '../src/pages/InicioSesion/context/authContext'
 import { ProtectedRoutes } from "./pages/InicioSesion/ProtectedRoutes.js";
+import { AboutUs } from "./pages/aboutUs/index.jsx";
+import {UsuarioInterfaz} from './pages/UsuarioInterfaz/UsuarioInterfaz';
+import {ReservaVet} from "./pages/reservaVet/ReservaVet"
 function App() {
   return (
     <Provider store={store}>
@@ -42,6 +45,18 @@ function App() {
               </ProtectedRoutes>
             } />
             <Route path="/register" element={<Register />} />
+            <Route path="/about-us" element={<AboutUs />} />
+
+            <Route path="/interfaz-usuario" element={
+            <ProtectedRoutes>
+              <UsuarioInterfaz/>
+            </ProtectedRoutes>
+            } />
+            <Route path="/agenda-vet" element={
+            <ProtectedRoutes>
+              <ReservaVet />
+            </ProtectedRoutes>
+            } />
 
 
           </Routes>

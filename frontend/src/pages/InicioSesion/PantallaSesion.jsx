@@ -6,10 +6,11 @@ import swal from 'sweetalert';
 import { Header } from '../commerce/commons/Header'
 import { useAuth } from './context/authContext';
 import { useNavigate } from 'react-router-dom'
+import { FcGoogle } from 'react-icons/fc';
 export const PantallaSesion = () => {
     const navigate = useNavigate();
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const { login } = useAuth();
+    const { login , loginWithGoogle } = useAuth();
     const saveData = async (data) => {
         try {
             await login(data.email, data.password)
@@ -29,11 +30,15 @@ export const PantallaSesion = () => {
             navigate('')
         }
     }
+    const handleGoogleSignin = async () => {
+        await loginWithGoogle()
+        navigate('/store')
+    }
     return (
         <>
             <Header />
             <body>
-                <Form className='tarjeta' style={{ height:450}} onSubmit={handleSubmit(saveData)}>
+                <Form className='tarjeta_p1'  onSubmit={handleSubmit(saveData)}>
                     <h3 style={{ padding: 20 }}>Iniciar Sesion</h3>
                     <Form.Field>
                         <label>Email</label>
@@ -58,7 +63,10 @@ export const PantallaSesion = () => {
                         />
                     </Form.Field>
                     {errors.password && <p style={{ color: 'red' }}>Por Favor ingrese una contraseña valida ! </p>}
+                    <a style={{color:'blue'}}>Olvidaste tu contraseña ?</a>
                     <Button type="submit" className="btn btn-primary" style={{ float: 'center', top: '55px', left: '125px' }} > Entrar </Button>
+                    <Button style={{ float:'center', top: '60px', left: '177px', width:50, borderRadius:70 }} className=" " onClick={handleGoogleSignin}><FcGoogle></FcGoogle></Button>
+
                 </Form>
             </body>
 
