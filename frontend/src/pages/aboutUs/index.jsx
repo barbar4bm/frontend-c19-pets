@@ -11,7 +11,6 @@ export const AboutUs = () => {
       <Barra />
       <head></head>
       <div style={{ marginBottom: "3000px" }}>
-        <body>
           <div className="barra">
             <div className="imagen-logo">
               <div className="text-clinica">Clinica veterinaria</div>
@@ -21,16 +20,16 @@ export const AboutUs = () => {
           <b>
             <div className="text-log">Sobre Nosotros</div>
           </b>
-          <p>
+          <p className="parrafo">
             "Somos una clínica orientada a la atención de calidad para los
             animales brindando medicina de calidad y vanguardia para nuestras
             mascotas. Contamos con un equipo médico de especialistas dispuesto a
             entregar lo mejor para nuestros pequeños compañeros."
           </p>
 
-          <h1> Equipo Médico:</h1>
-          <h5>Dr. Felipe Gutiérrez Cáceres </h5>
-          <h6>
+          <h1 className="titulo"> Equipo Médico:</h1>
+          <h5 className="subtitulo">Dr. Felipe Gutiérrez Cáceres </h5>
+          <h6 className="texto">
             Médico Veterinario UDLA, titulado con distinción. Diplomado en
             Cirugía de Pequeños Animales, Extensión HVS. Estancia de Cirugía de
             especialidad en Centro Veterinario México, DF. 9 Años de Experiencia
@@ -42,7 +41,6 @@ export const AboutUs = () => {
             pequeños animales. Diplomado en Gestión de Calidad e Inocuidad
             Alimentaria, U. de Chile
           </h6>
-        </body>
       </div>
       <Footer/>
     </>

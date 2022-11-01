@@ -1,10 +1,10 @@
-import React from 'react'
-import "./barra.css";
 import { Link } from 'react-router-dom';
+
+import "./barra.css";
+
 export const Barra = () => {
     return (
         <>
-
             < Link to="/about-us">
                 <button className='btn btn-secundary' style={{ float: 'right' }}>
                     Acerca de

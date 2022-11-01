@@ -1,45 +1,68 @@
-import React from "react";
-import "./AgendarHora.css";
+import { useState } from "react";
 import { Barra } from "../../components/barra/barra";
-import { Link } from 'react-router-dom';
 import { Footer } from "../commerce/commons/Footer";
+import { Heading } from "../commerce/commons/Heading";
+import { RiScissors2Fill } from "react-icons/ri";
+import { AiOutlineSchedule } from "react-icons/ai";
+import { TiCancel } from "react-icons/ti";
+import { FormScheduleModal } from "./formSchedule";
+
+import "./AgendarHora.css";
+import "../commerce/style/main.scss";
+
 export const AgendarHora = () => {
+  const [show, setShow] = useState(false);
+  const [title, setTitle] = useState(false);
+  const [type, setType] = useState(false);
+  const [service, setService] = useState("");
+
+  const handleShow = (title, type, service) => {
+    setTitle(title);
+    setType(type);
+    setService(service);
+    setShow(true);
+  }
+
   return (
     <>
       <Barra />
-
-      <div style={{ marginBottom: "3000px" }}>
-        <body>
-          <div className="barra">
-            <div className="imagen-logo">
-              <div className="text-clinica">Clinica veterinaria</div>
-              <div className="text-nombre">Puertas del mar</div>
-            </div>
-          </div>
-
-          <b>
-            <div className="text-log">Agendar hora</div>
-          </b>
-        
-          <div class="box1"><Link to="/hora">
-            <button className="btn btn-secundary" >
-              Agendar Hora
-            </button>
-          </Link></div>
-          <div class="box2"><Link to="/hora-peluqueria">
-            <button className="btn btn-secundary" >
-              Agendar Hora Peluqueria
-            </button>
-          </Link></div>
-          <div class="box3"><Link to="/anular-citas">
-            <button className="btn btn-secundary" >
-              Anular Hora
-            </button>
-          </Link></div>
-          
-        </body>
+      <div className="barra">
+        <div className="imagen-logo">
+          <div className="text-clinica">Clinica veterinaria</div>
+          <div className="text-nombre">Puertas del mar</div>
+        </div>
       </div>
-      <Footer />
+
+      <section className="customer">
+        <Heading
+          title="Agenda tu hora acá"
+          desc="desde aqui puedes administras tus horas, tanto agendarlas, como cancelarlas."
+        />
+        <div className="content">
+          <div className="card">
+            <p>Agendar hora Peluqueria</p>
+            <button onClick={() => handleShow('Agendar Hora Peluqueria', 'create', 'peluqueria')}>
+              <RiScissors2Fill />
+            </button>
+          </div>
+          <div className="card">
+            <p>Agendar hora veterinaria</p>
+            <button onClick={() => handleShow('Agendar Hora Veterinaria', 'create', 'veterinario')}>
+              <AiOutlineSchedule />
+            </button>
+          </div>
+          <div className="card">
+            <p>Anular Hora</p>
+            <button onClick={() => handleShow('Anular Hora', 'cancel', '')}>
+              <TiCancel />
+            </button>
+          </div>
+        </div>
+      </section>
+      <FormScheduleModal show={show} setShow={setShow} title={title} type={type} service={service} />
+      <div className="footer">
+        <Footer />
+      </div>
     </>
   );
 };

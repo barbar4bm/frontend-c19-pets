@@ -1,1 +1,0 @@
-# frontend-c19-pets
