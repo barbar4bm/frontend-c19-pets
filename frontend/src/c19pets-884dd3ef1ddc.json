@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "c19pets",
+  "private_key_id": "884dd3ef1ddc2b0ea9211428dabc01b80b343423",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCjTyoKecMcXP5V\n3ElP/sJankvlC4/Isby6eWAEu17IzpuwD9NtgWlZ1c0/2TP3ceWLaHJCp2ZvYtwk\nUapb0J9F1VU/lDWgyTfoAmXa8uIAG34ZZz28mSlwCVqXJlpS3i7WgSaKookjR78U\n+r3eh66WjuywwnB2ClGTDJ57Rs6UHEDGsJO6dX6PkZComChor5q4N43HRBAccTq1\nlRFp+d9wqatW2AVNYPwdrOyuEhvXW3H0mQtgJrt5muY74XsSvY1xKOf6cA+LPV+l\nckr261Kye+HBdVDmcECtlmJx06qtBSrdo0Qje1D8DifQH172IWIOmkvsT8oAtXyF\nqX8R42jvAgMBAAECggEAPoWn2EPenWTC4JdKIAyuVugksUd4YEMfuJqQVq9vbdyf\nwUuFy/ZQIZsXjdq3qQPbeEBgAkG5l2pXUrZLTQR1fdRbY1B4KZrvwuzsFuOG/7iG\n0e3zNlnDAggqvRRrXy996hSe71OjwjSNJNiMSX5TqoOEfXWrfZ2ctnoN0K9+ljgQ\nBU/c6PPl+XCspK0xrr+IcOhGTxNaAPKN2hEUzv/EuO7fotARbLb24ip2EoK8cS14\nVxi8IEWXyfazidziH2h6T37AwxgWi2MVm1wt3z/RuaU1f3ef2gQ0xv8e2JkDnrGE\nme0mW5AW0Zhj4HLF+POOQ7IjFyt9nPypiIsW08j9pQKBgQDY4L1ZfmkpaPCZ4E1W\n23GzfQZNnbfTiZT9cMUlaDokX4Wb59gOboNg+jq1zhf2SecIbE6+qrRddLklWv59\n4MUzQPk2Qk22aGK6hev0cS06ahC6TtLrIyQULZT1LisGQpENPkcOsS/7DmbkyYiI\nhufXMbk4c/s17SvXvsFKbjhCkwKBgQDAxKnudqA8q5f1fPWnrx0hCtpo/xn2I4yk\nZSGO0kiTu2nqNK/wdH6mcn2qNJ5dkXnDeMKptatCSVwdGSRe1JiDPuIXmTMzxdTY\nOctzf/c2PUxDSketxlErmu1qRHio/WLyMEl9BM+S3T/zctZL4TFWQ3EArt1slJqH\njvPDDMWttQKBgQDJAAkdX1YRheuvgT3MaRdI1W+5EZpkWFeYSCK/F4kDWvBWXRpV\nzcC/aUpuYvK8VSPlH5Qfi9Ab6WkKoPnKKj450VbnHa4uhzIxUpsrcpULVW/pa9J5\nEJmIhfJPBZnkdF9A2d47VKZ2VJOyKMH8XqOSQsg59Ov2v7fpfSZhWCOWNwKBgQCp\ns7ih7R7tqmaRwFuHLptnPmW+722MiglDpKBhWnB4VhJNE+sbtYLVx48nq0ELwIlA\nc2xz+TH2nhyQpVSmg2Rsjox+F+nCl1PksySP3sTkpBwiVR87NY65459E4ViT9NYJ\nvkbD39tZQJwPFzbfADXt6ltuLYNTFpPf6RJh0TmpzQKBgQCbXyDfJ2dRGsHz78tp\n8/RYGHr1xg/vc7YPUyuCJHX4Dtil2R4Z4E2vq49JnY+MaBoorFtJoDWMNsc865hV\ngnHRTNR/I9q4R7Rl81WBIVC73Io+DZwt8BKL1QwPlzjIBfCWN/p1TizdYEMQm5NC\n+oseXQMpr/aADP1qSz5VgDQPkw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "c19-pets-calendar@c19pets.iam.gserviceaccount.com",
+  "client_id": "106962399145500137118",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/c19-pets-calendar%40c19pets.iam.gserviceaccount.com"
+}
