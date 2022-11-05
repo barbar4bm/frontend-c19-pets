@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { PantallaSesion } from "./pages/InicioSesion/PantallaSesion.jsx";
 import { PantallaInicio } from "./pages/Pantalla/PantallaInicio.js";
@@ -16,6 +16,8 @@ import { AboutUs } from "./pages/aboutUs/index.jsx";
 import { UsuarioInterfaz } from './pages/UsuarioInterfaz/UsuarioInterfaz';
 import { ReservaVet } from "./pages/reservaVet/ReservaVet"
 import { Reserva } from "./pages/reservaVet/Reserva"
+import { AgendarHora} from './pages/AgendarHora/AgendarHora';
+
 function App() {
   return (
     <Provider store={store}>
@@ -66,7 +68,6 @@ function App() {
 
     </Provider >
   );
-
 }
 
 export default App;
