@@ -32,14 +32,14 @@ export const ProductsItem = ({ data }) => {
     return (
         <>
             <div className="product_items">{data.map((items) => (
-                <div className="box" key={items.codigo}>
+                <div className="box" key={items.id}>
                     <div className="img">
-                        <img src={items.imagen} alt="" />
+                        <img src={items.cover} alt="" />
                         <div className="overlay">
                             <button className='button'>
                                 <FiShoppingBag onClick={()=>addToCart(items)} />
                             </button>
-                            <button className='button' onClick={()=> onOpenImage(items.imagen)}>
+                            <button className='button' onClick={()=> onOpenImage(items.cover)}>
                                 <FiSearch />
                             </button>
                             <button className='button'>
@@ -47,9 +47,9 @@ export const ProductsItem = ({ data }) => {
                             </button>
                         </div>
                         <div className="details">
-                            <h3 > {items.nombre} </h3>
+                            <h3 > {items.title} </h3>
                             <p>{items.author}</p>
-                            <p>Precio: ${items.valor}</p>
+                            <p>Precio: ${items.price}</p>
                         </div>
                     </div>
                 </div>
