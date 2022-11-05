@@ -12,7 +12,7 @@ export const Reserva = () => {
     const { user } = useAuth();
     console.log(user.email); 
     const saveAppointment = async (data) => {
-        console.log(data);
+        //console.log(data);
         const appointement = await axios.post('http://localhost:3001/api/createEvents', data)
 
         swal({
@@ -44,7 +44,6 @@ export const Reserva = () => {
                         <input placeholder='Tomas se pone malito por *******' type="text" name="description"  {...register("description", { required: true, maxLength: 50, minLength: 2 })} />
                     </Form.Field>
                     {errors.description && <p style={{ color: 'red' }}>Por Favor ingrese una descripcion valida ! </p>}
-
                     <Form.Field>
                         <label>Cuando? </label>
                         <input type="datetime-local" name="startDateTime"  {...register("startDateTime", { required: true,})} />
