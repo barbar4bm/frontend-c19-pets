@@ -1,6 +1,6 @@
-import React ,{useState,useEffect} from 'react'
+import React ,{useState} from 'react'
 import {BiSearch} from 'react-icons/bi'
-import axios from 'axios'
+import { products } from '../../assets/data/data'
 import { SearchItem } from './SearchItem'
 
 export const Hero = () => {
@@ -12,19 +12,6 @@ export const Hero = () => {
         setValue(key)
         console.log('search', key);
     }
-
-    const [products, setProducts] = useState([])
-    const getData = async () => {
-        await axios.get('http://localhost:3001/api/product').then((response) => {
-            const data = response.data
-            console.log(data);
-            setProducts(data);
-        })
-    }
-    useEffect(() => {
-        getData();
-    }, [])
-
   return (
     <>
     <section className='hero'>
