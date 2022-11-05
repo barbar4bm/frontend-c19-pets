@@ -25,18 +25,18 @@ export const Header = () => {
   }
   //delete an element 
   const dispatch = useDispatch()
-  const delet = (codigo) => {
-    dispatch(DELETE(codigo))
+  const delet = (id) => {
+    dispatch(DELETE(id))
   }
   //precio total
-  const [valor,setPrice] = useState(0)
+  const [price,setPrice] = useState(0)
 
   const totals = () => {
-    let valor = 0
+    let price = 0
     getData.map((e,i)=>{
-      valor = parseFloat(e.valor) * e.cantidad + valor
+      price = parseFloat(e.price) * e.qty + price
     })
-    setPrice(valor)
+    setPrice(price)
   }
   useEffect(()=>{
     totals()
@@ -93,26 +93,26 @@ export const Header = () => {
                     {getData.map((e)=>(
                       <div className="details_content">
                         <div className="details_content_img">
-                          <Link to={`/cart/${e.codigo}`} onClick={handleClose}>
-                            <img src={e.imagen} alt="" />
+                          <Link to={`/cart/${e.id}`} onClick={handleClose}>
+                            <img src={e.cover} alt="" />
                           </Link>
                         </div>
                         <div className="details_content_detail">
                           <div className="details_content_detail_price">
-                            <p>{e.nombre.slice(0,20)}...</p>
-                            <p>Precio : ${e.valor}</p>
-                            <p>Cantidad : {e.cantidad}</p>
+                            <p>{e.title.slice(0,20)}...</p>
+                            <p>Precio : ${e.price}</p>
+                            <p>Cantidad : {e.qty}</p>
                           </div>
                         </div>
                         <div className="details_content_detail_icon">
-                          <i onClick={()=>delet(e.codigo)}>
+                          <i onClick={()=>delet(e.id)}>
                             <AiOutlineDelete />
                           </i>
                         </div>
                       </div>
                     ))}
                     <div className="details_total">
-                      <h4>Total : ${valor}</h4>
+                      <h4>Total : ${price}</h4>
                     </div>
                     <div className="details_comprar">
                       <button className='boton' onClick={()=>navigate(`/checkout`)}><h3 style={{color:"white"}}>Comprar</h3></button>
