@@ -30,13 +30,13 @@ export const Reserva = () => {
                     <h4>Puede elegir sus horas y agendar la atencion de sus mascotas rellenando este formulario</h4>
                     <Form.Field>
                         <label>Debe ir el nombre del evento como el nombre del cliente el vet </label>
-                        <input type="text" name="summary"  {...register("summary", { required: true, maxLength: 50, minLength: 2 })} value={user.email} disabled={true}  />
+                        <input type="text" name="summary"  {...register("summary", { required: true, maxLength: 50, minLength: 2 })} value={user.email} disabled={false}  />
                         {/** ver si debe ser insertado por el cliente o lo ponemos nosotros */}
                     </Form.Field>
                     {errors.summary && <p style={{ color: 'red' }}>Por Favor ingrese un nombre de evento valido ! </p>}
                     <Form.Field>
                         <label>Donde ?</label>
-                        <input value='Clinica Puertas del mar' type="text" name="location"  {...register("location", { required: true, maxLength: 40, minLength: 2 })} disabled={true}  />
+                        <input value='Clinica Puertas del mar' type="text" name="location"  {...register("location", { required: true, maxLength: 40, minLength: 2 })} disabled={false}  />
                     </Form.Field>
                     {errors.location && <p style={{ color: 'red' }}>Por Favor ingrese una locacion valida ! </p>}
                     <Form.Field>

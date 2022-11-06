@@ -11,6 +11,7 @@ export const Barra = () => {
                     Acerca de
                 </button>
             </Link >
+            <Link >
             <button className='btn btn-secundary' style={{ float: 'right' }} onClick={()=>navigate('/')}>
                 Agendar
             </button>

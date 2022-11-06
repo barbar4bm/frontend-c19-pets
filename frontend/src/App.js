@@ -16,7 +16,7 @@ import { AboutUs } from "./pages/aboutUs/index.jsx";
 import { UsuarioInterfaz } from './pages/UsuarioInterfaz/UsuarioInterfaz';
 import { ReservaVet } from "./pages/reservaVet/ReservaVet"
 import { Reserva } from "./pages/reservaVet/Reserva"
-import { AgendarHora} from './pages/AgendarHora/AgendarHora';
+import { AgendarHora } from './pages/AgendarHora/AgendarHora';
 
 function App() {
   return (
@@ -56,6 +56,11 @@ function App() {
               </ProtectedRoutes>
             } />
             <Route path="/agenda" element={
+              <ProtectedRoutes>
+                <AgendarHora />
+              </ProtectedRoutes>
+            } />
+            <Route path="/age" element={
               <ProtectedRoutes>
                 <Reserva />
               </ProtectedRoutes>
