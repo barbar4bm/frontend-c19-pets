@@ -15,7 +15,6 @@
     "mercadopago": "^1.5.14",
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
-    "react-async-select": "^0.2.6",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.38.0",

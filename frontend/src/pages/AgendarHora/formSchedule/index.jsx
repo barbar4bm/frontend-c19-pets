@@ -49,11 +49,8 @@ export const FormScheduleModal = ({ show, setShow, title, type, service }) => {
     setShow(false);
   };
 
-  /*const requestCreateSchedule = async (formData) => {
-    return await apiHost.post(`/schedule/${service}`, formData);
-  };*/
   const requestCreateSchedule = async (formData) => {
-    return await apiHost.post(`/createEvents/`, formData);
+    return await apiHost.post(`/schedule/${service}`, formData);
   };
 
   const requestCancelSchedule = async (code) => {

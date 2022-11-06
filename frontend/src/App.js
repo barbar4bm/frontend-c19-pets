@@ -14,7 +14,6 @@ import { AuthProvider } from '../src/pages/InicioSesion/context/authContext'
 import { ProtectedRoutes } from "./pages/InicioSesion/ProtectedRoutes.js";
 import { AboutUs } from "./pages/aboutUs/index.jsx";
 import { UsuarioInterfaz } from './pages/UsuarioInterfaz/UsuarioInterfaz';
-import { ReservaVet } from "./pages/reservaVet/ReservaVet"
 import { Reserva } from "./pages/reservaVet/Reserva"
 import { AgendarHora } from './pages/AgendarHora/AgendarHora';
 
