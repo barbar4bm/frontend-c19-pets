@@ -49,11 +49,8 @@ export const FormScheduleModal = ({ show, setShow, title, type, service }) => {
     setShow(false);
   };
 
-  /*const requestCreateSchedule = async (formData) => {
-    return await apiHost.post(`/schedule/${service}`, formData);
-  };*/
   const requestCreateSchedule = async (formData) => {
-    return await apiHost.post(`/createEvents/`, formData);
+    return await apiHost.post(`/schedule/${service}`, formData);
   };
 
   const requestCancelSchedule = async (code) => {
@@ -157,11 +154,10 @@ const BodyForm = ({ formData, setFormData, formError, service, handleSumit }) =>
 
   return (
     <Modal.Body>
-      <Form onSubmit={handleSumit}>
         <Row>
           <Col md={6}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Nombre Completo</Form.Label>
+              <Form.Label>Nombre completo</Form.Label>
               <Form.Control
                 name="name"
                 type="text"
@@ -174,7 +170,7 @@ const BodyForm = ({ formData, setFormData, formError, service, handleSumit }) =>
           </Col>
           <Col md={6}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Correo Electronico</Form.Label>
+              <Form.Label>Correo electrónico</Form.Label>
               <Form.Control
                 name="email"
                 type="email"
@@ -187,7 +183,7 @@ const BodyForm = ({ formData, setFormData, formError, service, handleSumit }) =>
           </Col>
           <Col md={6}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Numero Telefonico</Form.Label>
+              <Form.Label>Número telefónico</Form.Label>
               <Form.Control
                 name="phone"
                 type="text"
@@ -200,7 +196,7 @@ const BodyForm = ({ formData, setFormData, formError, service, handleSumit }) =>
           </Col>
           <Col md={6}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Fecha de la Reserva</Form.Label>
+              <Form.Label>Fecha de la reserva</Form.Label>
               <Form.Control
                 name="date"
                 type="date"
@@ -219,12 +215,11 @@ const BodyForm = ({ formData, setFormData, formError, service, handleSumit }) =>
               onChange={(event) => handleChange(event.target)}
               isInvalid={formError.hour}
             >
-              <option>Selecione Hora disponible</option>
+              <option>Seleccione hora disponible</option>
               {hours.length > 0 && <RenderOption options={hours} />}
             </Form.Select>
           </Col>
         </Row>
-      </Form>
     </Modal.Body>
   );
 };
@@ -238,11 +233,10 @@ const BodyCancel = ({ formDataCancel, setFormDataCancel, formErrorCancel, handle
 
   return (
     <Modal.Body>
-      <Form onSubmit={handleSumit}>
         <Row>
           <Col md={12}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Codigo de la reserva</Form.Label>
+              <Form.Label>Código de la reserva</Form.Label>
               <Form.Control
                 name="code"
                 type="text"
@@ -254,7 +248,6 @@ const BodyCancel = ({ formDataCancel, setFormDataCancel, formErrorCancel, handle
             </Form.Group>
           </Col>
         </Row>
-      </Form>
     </Modal.Body>
   );
 };
