@@ -21,10 +21,10 @@ export const PantallaInicio = () => {
         
         <div className='contenedor'>
           <div className='imagen-inicial'></div>
-          <div className='tarjet text-center'> Respecto a nosotros
-
-            <text>Centro especializado en cirugía veterinaria y atención integral de mascotas. </text> 
-            <text>Contamos con servicios de clinica general y especializada.</text> 
+          <div className='tarjet'> 
+            <div className='titulo-info text-center'>Respecto a nosotros</div>
+            <div className='texto-infor'>Centro especializado en cirugía veterinaria y atención integral de mascotas. </div> 
+            <div className='texto-infor'>Contamos con servicios de clinica general y especializada.</div> 
             <div className='fondo-huella'></div>
           </div> 
          
