@@ -11,17 +11,17 @@ import {Header} from '../commons/Header'
 export const Details = () => {
     const [data, setData] = useState([])
     const getData = useSelector((state) => state.cartReducer.carts)
-    const { codigo } =useParams()
+    const { id } =useParams()
     const navigate = useNavigate()
     const compare = ()=>{
         let compareData = getData.filter((e)=>{
-            return e.codigo == codigo
+            return e.id == id
         })
         setData(compareData)
     }
     useEffect(()=>{
         compare()
-    },[codigo])
+    },[id])
     const dispatch = useDispatch()
     const increment = (e)=>{
         dispatch(ADD(e))
@@ -29,8 +29,8 @@ export const Details = () => {
     const decrement = (item)=>{
         dispatch(REMOVE_INT(item))
     }
-    const dels = (codigo) =>{
-        dispatch(DELETE(codigo))
+    const dels = (id) =>{
+        dispatch(DELETE(id))
         navigate("/store")
     }
     return (
@@ -55,14 +55,14 @@ export const Details = () => {
                                     <MdStarRate />
                                     <label htmlFor=''>(1 comentario)</label>
                                 </div>
-                                <h3>${item.valor * item.cantidad}</h3>
+                                <h3>${item.price * item.quantity}</h3>
                                 <div className="qty">
                                     <div className="count">
                                         <button onClick={() => increment(item)}>
                                             <AiOutlinePlus />
                                         </button>
-                                        <span>{item.cantidad}</span>
-                                        <button onClick={item.cantidad <= 1 ? () => dels(item.codigo) : () => decrement(item)}>
+                                        <span>{item.quantity}</span>
+                                        <button onClick={item.quantity <= 1 ? () => dels(item.id) : () => decrement(item)}>
                                             <AiOutlineMinus />
                                         </button>
                                     </div>
@@ -70,7 +70,7 @@ export const Details = () => {
                                 </div>
                                 <div className="desc">
                                         <h4>CATEGORIA DEL PRODUCTO</h4>
-                                        <p>{item.categoria}</p>
+                                        <p>{item.category}</p>
                                         <h4>Detalles Productos</h4>
                                         <ul>
                                             <li>
