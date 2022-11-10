@@ -1,6 +1,3 @@
-body {
-    background-color: rgb(161, 160, 160);
-}
 .barra{
     background-color: white;
     width: 100%;
@@ -8,8 +5,6 @@ body {
     border-radius: 1%;
     background-attachment: local;
 }
-
-
 .imagen-logo {
     background-image: url(../../components/icono.jpg);
     width:73px;
@@ -25,8 +20,7 @@ body {
     width:180px ;
     height: 20px;
     box-sizing: border-box;
-    margin: 1px;
-       
+    
   
 }
 .text-nombre{
@@ -36,52 +30,62 @@ body {
     font-weight: bolder;
     top: 10px;
     left: 80px;
-    width:160px ;
+    width:200px ;
     height: 20px;
     box-sizing: border-box;
 
 }
 .text-log{
     position: relative;
-    color: grey;
+    color:black;
     text-transform: uppercase;
     top: -20px;
-    left: 600px;
+    left:400px;
     width:160px ;
     height: 20px;
     box-sizing: border-box;
   
 }
-.tarjeta{
-    background-color: white;
+.parrafo{
+    color:blue;
+    position:relative;
+    text-transform: uppercase;
+    top: 20px;
+    left: 80px;
+    width: 900px ;
+    height: 100px;
+    box-sizing: content-box;
+    
+}
+.titulo{
+    color:blue;
     position: relative;
-    width: 540px;
-    height:550px;
-    border-radius: 4%;
-    left: 31%;
-    bottom: -50px;
-    overflow:scroll;
-
+    text-transform: uppercase;
+    top: 20px;
+    left: 10px;
+    width:400px ;
+    height: 70px;
+    box-sizing: border-box;
+    
 }
-.tarjeta_p1{
-    background-color: white;
+.subtitulo{
+    color:black;
+    
     position: relative;
-    width: 540px;
-    height:570px;
-    border-radius: 4%;
-    left: 31%;
-    bottom: -50px;
-    overflow:scroll;
-
+    top: 20px;
+    left: 50px;
+    width:400px ;
+    height: 50px;
+    box-sizing: border-box;
 }
-
-.container_p1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boton-n1 button{
-    position: inherit;
-
+.texto{
+    color:grey;
+    font-family: "Homer Simpson UI";
+    position: relative;
+    line-height: 200%;
+    top: 20px;
+    left: 50px;
+    width:400px ;
+    height: 70px;
+    box-sizing: border-box;
 }

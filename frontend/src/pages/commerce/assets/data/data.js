@@ -9,11 +9,15 @@ export const navlist = [
   },
   {
     text: "agendar",
-    path: "/blog",
+    path: "/agenda",
   },
   {
     text: "nosotros",
-    path: "/contact",
+    path: "/about-us",
+  },
+  {
+    text: "agePIPe",
+    path: "/age",
   },
 ]
 
