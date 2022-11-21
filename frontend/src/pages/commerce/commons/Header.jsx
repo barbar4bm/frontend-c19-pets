@@ -53,6 +53,20 @@ export const Header = () => {
   useEffect(()=>{
     totals()
   },[totals])
+
+  const [quantityTot,setTotalQuantity] = useState(0)
+
+  const quantityTotal = () => {
+    let quantity = 0
+    getData.map((e,i)=>{
+      quantity = e.quantity + quantity
+    })
+    setTotalQuantity(quantity)
+  }
+  useEffect(()=>{
+    quantityTotal()
+  },[quantityTotal])
+
   const navigate =useNavigate()
   const onref = (num) => {
     if (num != 1){
@@ -97,7 +111,7 @@ export const Header = () => {
             <div className="rigth_card">
               <button className='button' onClick={()=> setCartList(!cartList)}>
                 <BsBagCheck className='shop heIcon'></BsBagCheck>
-                Carrito ({getData.length})
+                Carrito ({quantityTot})
               </button>
               <div className={cartList ? 'showCart' : 'hideCart'}>
                 {getData.length ? (

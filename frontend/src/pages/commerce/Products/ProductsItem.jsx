@@ -36,7 +36,7 @@ export const ProductsItem = ({ data }) => {
                     <div className="img">
                         <img src={items.cover} alt="" />
                         <div className="overlay">
-                            <button className='button'>
+                            <button disabled={items.quantity == 0} className='button'>
                                 <FiShoppingBag onClick={()=>addToCart(items)} />
                             </button>
                             <button className='button' onClick={()=> onOpenImage(items.cover)}>
