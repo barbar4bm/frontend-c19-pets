@@ -139,3 +139,10 @@
     opacity: .6;
     transition: .5s;
 }
+
+.texto-infor{
+    margin: 10px;
+    font-size: medium;
+    position: relative;
+
+}
