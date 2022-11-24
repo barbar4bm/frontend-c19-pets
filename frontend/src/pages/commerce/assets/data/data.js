@@ -15,10 +15,7 @@ export const navlist = [
     text: "nosotros",
     path: "/about-us",
   },
-  {
-    text: "agePIPe",
-    path: "/age",
-  },
+
 ]
 
 export const hero = [
