@@ -125,7 +125,7 @@ export const FormScheduleModal = ({ show, setShow, title, type, service }) => {
             variant="primary"
             onClick={type === "create" ? handleSumit : handleSumitCancel}
           >
-            Agendar
+            {type === "create" ? 'Agendar' : 'Anular'}
           </Button>
         </Modal.Footer>
       </Modal>
