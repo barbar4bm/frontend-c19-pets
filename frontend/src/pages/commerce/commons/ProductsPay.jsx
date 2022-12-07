@@ -37,7 +37,7 @@ export const ProductsPay = () => {
             <Header />
 
             <article>
-                <section className='details'>
+                <section className='details' style={{marginLeft:50}}>
                     <h2 className='details_title' style={{alignText:'center'}}> Carrito </h2>
                     {data.map((item) => (
                         <div className="details_content">

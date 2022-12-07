@@ -6,7 +6,7 @@ import { RiScissors2Fill } from "react-icons/ri";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { TiCancel } from "react-icons/ti";
 import { FormScheduleModal } from "./formSchedule";
-
+import { Header } from '../commerce/commons/Header'
 import "./AgendarHora.css";
 import "../commerce/style/main.scss";
 
@@ -25,13 +25,13 @@ export const AgendarHora = () => {
 
   return (
     <>
-      <Barra />
-      <div className="barra">
+      <Header />
+      {/*<div className="barra">
         <div className="imagen-logo">
           <div className="text-clinica">Clinica veterinaria</div>
           <div className="text-nombre">Puertas del mar</div>
         </div>
-      </div>
+  </div>*/}
 
       <section className="customer">
         <Heading

@@ -15,6 +15,10 @@ export const navlist = [
     text: "nosotros",
     path: "/about-us",
   },
+  {
+    text: "registrar",
+    path: "/register",
+  },
 
 ]
 

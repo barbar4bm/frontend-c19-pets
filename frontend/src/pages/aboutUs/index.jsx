@@ -3,20 +3,20 @@ import React from "react";
 import "./AboutUs.css";
 import { Barra } from "../../components/barra/barra";
 import { Footer } from "../commerce/commons/Footer";
-
+import { Header } from "../commerce/commons/Header";
 
 export const AboutUs = () => {
   return (
     <>
-      <Barra />
+      <Header />
       <head></head>
       <div style={{ marginBottom: "3000px" }}>
-          <div className="barra">
+          {/*<div className="barra">
             <div className="imagen-logo">
               <div className="text-clinica">Clinica veterinaria</div>
               <div className="text-nombre">Puertas del mar</div>
             </div>
-          </div>
+  </div>*/}
           <b>
             <div className="text-log">Sobre Nosotros</div>
           </b>

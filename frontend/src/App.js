@@ -13,8 +13,6 @@ import { Register } from "./pages/InicioSesion/Register.jsx";
 import { AuthProvider } from '../src/pages/InicioSesion/context/authContext'
 import { ProtectedRoutes } from "./pages/InicioSesion/ProtectedRoutes.js";
 import { AboutUs } from "./pages/aboutUs/index.jsx";
-import { UsuarioInterfaz } from './pages/UsuarioInterfaz/UsuarioInterfaz';
-import { Reserva } from "./pages/reservaVet/Reserva"
 import { AgendarHora } from './pages/AgendarHora/AgendarHora';
 
 function App() {
@@ -48,22 +46,12 @@ function App() {
             } />
             <Route path="/register" element={<Register />} />
             <Route path="/about-us" element={<AboutUs />} />
-
-            <Route path="/interfaz-usuario" element={
-              <ProtectedRoutes>
-                <UsuarioInterfaz />
-              </ProtectedRoutes>
-            } />
             <Route path="/agenda" element={
               <ProtectedRoutes>
                 <AgendarHora />
               </ProtectedRoutes>
             } />
-            <Route path="/age" element={
-              <ProtectedRoutes>
-                <Reserva />
-              </ProtectedRoutes>
-            } />
+            />
 
 
           </Routes>
