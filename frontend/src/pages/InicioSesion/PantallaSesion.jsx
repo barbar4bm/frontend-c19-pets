@@ -41,8 +41,8 @@ export const PantallaSesion = () => {
         //console.log(userMail);
         if (!userMail) {
             swal({
-                title: "Upps! Paren el mundo que me BAJO!!!",
-                text: "Por favor, ingrese su email para iniciar la recuperacion de la contraseña",
+                title: "¡Upps! ¡¡¡Paren el mundo que me BAJO!!!",
+                text: "Por favor, ingrese su email para iniciar la recuperación de la contraseña",
                 icon: "warning",
             })
         } else {
@@ -50,15 +50,15 @@ export const PantallaSesion = () => {
                 console.log(userMail);
                 await resetPassword(userMail.toLowerCase())
                 swal({
-                    title: "Tu tranquilo nosotros preocupados!!!",
+                    title: "¡¡¡Tú tranquilo nosotros preocupados!!!",
                     text: "Te hemos enviado un email para que puedas recuperar tu contraseña",
                     icon: "info",
                 })
             } catch (error) {
                 console.log(error);
                 swal({
-                    title: "Upps! Paren el mundo que me BAJO!!!",
-                    text: "Algo malio sal tranqui !!! ",
+                    title: "¡Upps! ¡¡¡Paren el mundo que me BAJO!!!",
+                    text: "¡Hubo un error!",
                     icon: "warning",
                 })
             }

@@ -39,7 +39,7 @@ export const Details = () => {
 
             <article>
                 <section className='details'>
-                    <h2 className='details_title'> Paginas de detalles de Productos</h2>
+                    <h2 className='details_title'> Páginas de detalles de productos</h2>
                     {data.map((item) => (
                         <div className="details_content">
                             <div className="details_content_img">
@@ -69,14 +69,14 @@ export const Details = () => {
                                     <button className='button' onClick={ () => navigate('/store')}>Añadir al carrito</button>
                                 </div>
                                 <div className="desc">
-                                        <h4>CATEGORIA DEL PRODUCTO</h4>
+                                        <h4>CATEGORÍA DEL PRODUCTO</h4>
                                         <p>{item.category}</p>
                                         <h4>Detalles Productos</h4>
                                         <ul>
                                             <li>
-                                                <p> detalle 1</p>
-                                                <p> detalle 2</p>
-                                                <p> detalle 3</p>
+                                                <p> Detalle 1</p>
+                                                <p> Detalle 2</p>
+                                                <p> Detalle 3</p>
 
                                             </li>
                                         </ul>

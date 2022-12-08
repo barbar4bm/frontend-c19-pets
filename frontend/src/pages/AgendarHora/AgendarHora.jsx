@@ -36,17 +36,17 @@ export const AgendarHora = () => {
       <section className="customer">
         <Heading
           title="Agenda tu hora acá"
-          desc="desde aqui puedes administras tus horas, tanto agendarlas, como cancelarlas."
+          desc="Desde aquí puedes administrar tus horas, tanto agendarlas, como cancelarlas."
         />
         <div className="content">
           <div className="card">
-            <p>Agendar hora Peluqueria</p>
+            <p>Agendar hora de peluquería</p>
             <button onClick={() => handleShow('Agendar Hora Peluqueria', 'create', 'peluqueria')}>
               <RiScissors2Fill />
             </button>
           </div>
           <div className="card">
-            <p>Agendar hora veterinaria</p>
+            <p>Agendar hora de veterinaria</p>
             <button onClick={() => handleShow('Agendar Hora Veterinaria', 'create', 'veterinario')}>
               <AiOutlineSchedule />
             </button>

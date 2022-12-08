@@ -148,7 +148,7 @@ export const Header = () => {
                   </section>
                 ): (
                   <div className="empty">
-                    <p>Tu carrito esta vacio</p>
+                    <p>Tu carrito esta vacío</p>
                     <img src={cartimg} alt="" />
                   </div>
                 )}

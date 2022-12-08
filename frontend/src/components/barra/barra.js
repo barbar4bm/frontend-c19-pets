@@ -19,7 +19,7 @@ export const Barra = () => {
             
             <Link to="/login" >
                 <button className='btn btn-secundary' style={{ float: 'right' }} Link to="/login">
-                    Inicio Sesión
+                    Inicio de sesión
                 </button>
             </Link>
             <Link to="/register" >

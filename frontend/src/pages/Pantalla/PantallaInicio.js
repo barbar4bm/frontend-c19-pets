@@ -24,7 +24,7 @@ export const PantallaInicio = () => {
           <div className='tarjet'> 
             <div className='titulo-info text-center'>Respecto a nosotros</div>
             <div className='texto-infor'>Centro especializado en cirugía veterinaria y atención integral de mascotas. </div> 
-            <div className='texto-infor'>Contamos con servicios de clinica general y especializada.</div> 
+            <div className='texto-infor'>Contamos con servicios de clnicía general y especializada.</div> 
             <div className='fondo-huella'></div>
           </div> 
          

@@ -43,7 +43,7 @@ export const hero = [
   {
     id: 4,
     cover: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fveterinariaarizio.com.ar%2Fwp-content%2Fuploads%2F2020%2F09%2Ficon-clinica.png&f=1&nofb=1&ipt=40bcd730a3c1d9fdcde9a4ceb7b16891639e764ba9c27556e8edc55cca15336f&ipo=images",
-    name: "interconsulta de especialistas",
+    name: "Interconsulta de especialistas",
     
   },
   {
@@ -81,63 +81,24 @@ export const hero2 = [
   
   },
 ]
-export const products = [
-  {
-    id: 1,
-    cover: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kittonhomecenter.com%2Fwp-content%2Fuploads%2F2020%2F06%2FDCH-33A40005.jpg&f=1&nofb=1&ipt=3c81d5d9c0cf74a0a3ec60d806982fb5cba8741138bd8441e857514460eb4b7c&ipo=images",
-    title: "CAT CHOW ADULTO ",
-    author: "Vet.puertas del mar",
-    price: 8790,
-    category: "comida",
-    qty: 0,
-  },
-  {
-    id: 2,
-    cover: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhomecenterco.scene7.com%2Fis%2Fimage%2FSodimacCO%2F443546%3Ffmt%3Djpg%26fit%3Dconstrain%2C1%26wid%3D420%26hei%3D420&f=1&nofb=1&ipt=e50cd65ae4d723367306f868b1fc903f871d8818d1db8faec19a3dc20fcfcfa1&ipo=images",
-    title: "Pedigree Adulto ",
-    author: "",
-    price: 7800,
-    category: "Comida",
-    qty: 0,
-  },
-  {
-    id: 3,
-    cover: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdnx.jumpseller.com%2Fstylopets%2Fimage%2F11831552%2Fresize%2F1200%2F1200%3F1613142335&f=1&nofb=1&ipt=30b65b8d61e002846ff8ff0c6647547dad6ce0a35d709770884b1684f445a2be&ipo=images",
-    title: "Arnes para Cachorro",
-    author: "",
-    price: 5000,
-    category: "Accesorios",
-    qty: 0,
-  },
-  {
-    id: 4,
-    cover: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-mSqhWBZAK3I%2FUVNlWPgQaDI%2FAAAAAAAAAOE%2FZKvdC8ba8bE%2Fs1600%2Ftirador.jpg&f=1&nofb=1&ipt=7172bc128da3989c1696dc20d0c5ff7cffa0e3b7f92fc386cdb8e8308273b8db&ipo=images",
-    title: "Correa perro pequeño",
-    author: "",
-    price: 4000,
-    category: "Accesorios",
-    qty: 0,
-  },
-  
-  
-]
+
 export const customer = [
   {
     id: 1,
     desc: "Mi perrito quedo super contento con su traje de marinerito ",
-    name: "Doña florinda",
+    name: "Doña Florinda",
     post: "Amante de los YorkShire",
   },
   {
     id: 2,
-    desc: "Nunca habia podido encontrar los productos que necesita mis pajaritos en ningun lugar los habia encontrado",
+    desc: "Nunca había podido encontrar los productos que necesitan mis pajaritos, en ningún lugar los había encontrado",
     name: "Alejandra Asgard",
     post: "Orgullosa dueña de 7 canarios",
   },
   {
     id: 3,
-    desc: "Gracias a la veterinarias puerta del mar he podido ver de nuevo",
-    name: "Doña bonitos ojos",
-    post: "Orgullosa Dueña de un pulpo",
+    desc: "Gracias a la veterinaria Puerta del Mar he podido ver de nuevo",
+    name: "Doña Bonitos Ojos",
+    post: "Orgullosa dueña de un pulpo",
   },
 ]

@@ -21,8 +21,8 @@ export const AboutUs = () => {
             <div className="text-log">Sobre Nosotros</div>
           </b>
           <p className="parrafo">
-            "Somos una clínica orientada a la atención de calidad para los
-            animales brindando medicina de calidad y vanguardia para nuestras
+            "Somos una clínica orientada a la atención de calidad. Dirigida a los
+            animales, brindando medicina de calidad y vanguardia para nuestras
             mascotas. Contamos con un equipo médico de especialistas dispuesto a
             entregar lo mejor para nuestros pequeños compañeros."
           </p>

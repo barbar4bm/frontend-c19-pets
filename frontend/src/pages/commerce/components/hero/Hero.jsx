@@ -30,16 +30,16 @@ export const Hero = () => {
     <section className='hero'>
         <div className="container">
             <h1>
-                <label htmlFor='' ><span>Centro especializado en cirugia </span> veterinaria y atención integral de mascotas.</label>
+                <label htmlFor='' ><span>Centro especializado en cirugía. </span> veterinaria y atención integral de mascotas.</label>
                 <br/>
                 <br/>
                 
-                <label><span>Medicina integral de calidad para su mascota</span></label>
+                <label><span>Medicina integral de calidad para su mascota.</span></label>
 
-                <p>clínica orientada a la atención de calidad para los animales brindando medicina de calidad y vanguardia para nuestras mascotas.</p>
+                <p>Clínica orientada a la atención de calidad para los animales, brindando medicina de calidad y vanguardia para nuestras mascotas.</p>
             </h1>
             <div className="search">
-                <span> Todas las categorias</span>
+                <span> Todas las categorías</span>
                 <hr />
                 <input type='text' placeholder='Buscar Productos...' onChange={onChange} value={value}></input>
                 <button onClick={() => onSearch(value)}>
@@ -47,7 +47,7 @@ export const Hero = () => {
                 </button>  
             </div>
             <SearchItem product={products} value={value} onSearch={onSearch} />
-            <p>Ejemplos: Comida, Antiparasitarios, y todo lo que necesitas para tu regalon</p>
+            <p>Ejemplos: comida, antiparasitarios, y todo lo que necesitas para tu regalón</p>
         </div>
     </section>
     </>
