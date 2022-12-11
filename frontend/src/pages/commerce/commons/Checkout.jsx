@@ -74,8 +74,8 @@ export const Checkout = () => {
                 console.log(res.status);
             })
             swal({
-                title: "Envio listo!",
-                text: "Datos guardados!",
+                title: "¡Envío listo!",
+                text: "¡Datos guardados!",
                 icon: "success",
               })
             closeModal();
@@ -106,27 +106,27 @@ export const Checkout = () => {
                         isOpen={modalIsOpen}
                         onRequestClose={closeModal}
                         style={customStyles}
-                        contentLabel="Direccion de envio"
+                        contentLabel="Dirección de envío"
                     >
 
                         <Form onSubmit={handleSubmit(saveShipping)}>
-                            <h3 style={{ alignItem: 'center', TextAlign: 'center' }}>Formulario de envio</h3>
-                            <h4>Inserte los siguientes datos para la recepcion de sus productos</h4>
+                            <h3 style={{ alignItem: 'center', TextAlign: 'center' }}>Formulario de envío</h3>
+                            <h4>Inserte los siguientes datos para la recepción de sus productos</h4>
                             <Form.Field>
                                 <label>Nombres:  </label>
                                 <input type="text" name="name"  {...register("name", {required:true, maxLength: 50, minLength: 2})} />
                             </Form.Field>
-                            {errors.name && <p style={{color:'red'}}>Por Favor revise su nombre ! </p>}
+                            {errors.name && <p style={{color:'red'}}>¡Por favor, revise su nombre! </p>}
                             <Form.Field>
-                                <label> Direccion:  </label>
+                                <label> Dirección:  </label>
                                 <input type="text" name="address" {...register("address", {required:true, maxLength: 20, minLength: 2})}  />
                             </Form.Field>
-                            {errors.address && <p>Por Favor revise su Direccion ! </p>}
+                            {errors.address && <p>¡Por favor revise su dirección! </p>}
                             <Form.Field>
-                            <label>Telefono:  </label>
+                            <label>Teléfono:  </label>
                             <input type="number" name="phone"  {...register("phone", {required:true, maxLength: 9, minLength: 8})} />
                             </Form.Field>
-                            {errors.phone && <p>Por favor su numero de telefono debe tener 8 a 9 numeros </p>}
+                            {errors.phone && <p>Por favor, su número de telefono debe tener 8 a 9 números </p>}
                             <Button type="submit" className='button' value="Guardar" >Guardar</Button>
                         </Form>
                     </Modal>
