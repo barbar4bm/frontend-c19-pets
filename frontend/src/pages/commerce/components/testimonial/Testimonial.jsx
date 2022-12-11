@@ -6,7 +6,7 @@ import { customer } from '../../assets/data/data'
 export const Testimonial = () => {
     return (
         <section className='customer'>
-            <Heading title='Cuenta con nosostros' desc='Cuenta con los mejores en el sector en el cuidado de tu regalón.'>
+            <Heading title='Cuenta con nosotros' desc='Cuenta con los mejores en el sector en el cuidado de tu regalón.'>
             </Heading>
             <div className="content">
                 {customer.map((items) =>

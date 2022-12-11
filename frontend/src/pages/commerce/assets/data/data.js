@@ -85,7 +85,7 @@ export const hero2 = [
 export const customer = [
   {
     id: 1,
-    desc: "Mi perrito quedo super contento con su traje de marinerito ",
+    desc: "Mi perrito quedó super contento con su traje de marinerito ",
     name: "Doña Florinda",
     post: "Amante de los YorkShire",
   },
